@@ -1,29 +1,16 @@
-# Almace Scaffolding
+## Forked from [AMSF](https://github.com/sparanoid/almace-scaffolding)
+### Version 1.1.8
+#### Theme: curtana
 
-[![Greenkeeper badge](https://badges.greenkeeper.io/sparanoid/almace-scaffolding.svg)](https://greenkeeper.io/)
-[![Build Status](https://travis-ci.org/sparanoid/almace-scaffolding.svg)](https://travis-ci.org/sparanoid/almace-scaffolding)
-[![devDependency Status](https://david-dm.org/sparanoid/almace-scaffolding/dev-status.svg)](https://david-dm.org/sparanoid/almace-scaffolding#info=devDependencies)
-[![Built with Almace Scaffolding](https://d349cztnlupsuf.cloudfront.net/amsf-badge.svg)](https://sparanoid.com/lab/amsf/)
-
-`AMSF`, a.k.a. **Almace Scaffolding**, a super-fast Jekyll framework. Supports live reloading (Browsersync), Less, HTML minification, inlined stylesheets and more.
-
------
-
-## [Getting Started](https://sparanoid.com/lab/amsf/getting-started.html)
-
-## Donate
-
-Wanna buy me a cup of coffee? [Great](https://sparanoid.com/donate/).
-
-## Author
-
-**Tunghsiao Liu**
-
-- Twitter: @[tunghsiao](https://twitter.com/tunghsiao)
-- GitHub: @[sparanoid](https://github.com/sparanoid)
 
 ## Licenses
 
-All files and directories are licensed under the [MIT](http://www.opensource.org/licenses/mit-license.php) unless explicitly stated.
+Following files, directories and their contents are copyright Sudhanshu Passi and licensed under a [CC BY-NC-ND 3.0](http://creativecommons.org/licenses/by-nc-nd/3.0/). You may not reuse anything therein without permission:
 
-© Sparanoid, Inc., Rights reserved as indicated above.
+- `./_amsf/_app/_posts/`
+- `./_amsf/_app/apple-touch-icon.png`
+- `./_amsf/_app/favicon.*`
+
+All other files and directories are licensed under the [MIT](http://www.opensource.org/licenses/mit-license.php) unless explicitly stated.
+
+© Sudhanshu Passi, Rights reserved as indicated above.

@@ -1,7 +1,13 @@
-- title: __home__
+- title: HOME
   url:   /
 
-- title: News
+- title: Design
+  url:   /design/
+
+- title: Deep learning
+  url:   /deep/
+
+- title: Blog
   url:   /news/
 
 - title: About
