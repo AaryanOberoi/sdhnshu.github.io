@@ -1,0 +1,4 @@
+User-agent: *
+
+
+Sitemap: http://sdhnshu.com/sitemap.xml
