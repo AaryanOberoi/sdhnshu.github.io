@@ -2,20 +2,14 @@
 layout: page
 title: About
 permalink: /about/
-desc: 示例頁面・サンプルページ・Example Page
+desc: बारे मे・Introduction
 ---
 
-This is an example About page.
+I am originally from __Mumbai__, India but have lived around the country. In 2017 I earned my Bachelors degree in Computer Science from __Bangalore__ and have been working in Bangalore since.
 
-Sparanoid is a design studio operated by Tunghsiao Liu. You can ping me on [Twitter](https://twitter.com/tunghsiao) or send correspondence to [t@sparanoid.com](mailto:t@sparanoid.com).
+While in my last year of graduation, I became interested in the field of deep learning and have been working in it since. I have also worked as a graphic designer and still like doing it in my free time.
 
-## Colophon
+When I'm not working I like listening to music, swimming and travelling.
 
-[AMSF](https://sparanoid.com/lab/amsf/) ([Source](https://github.com/sparanoid/sparanoid.com)) -
-[GitHub](https://github.com/) -
-[CloudFront](https://aws.amazon.com/cloudfront/) -
-[Textmate](https://macromates.com/)
-
-All posts are &copy; Sparanoid, Inc., all rights reserved.
-
-*[AMSF]: Almace Scaffolding
+All posts are &copy; Sudhanshu Passi, all rights reserved.
+## SWE

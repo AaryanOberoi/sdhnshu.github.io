@@ -2,7 +2,7 @@
 layout: page
 title: Sign up for Emails
 permalink: /email-signup/
-desc: सब्स्क्राइब्・Newsletter
+desc: सब्स्क्राइब्・Subscribe
 ---
 
 Sign up for the newsletter. You will get email updates when new posts are published.
