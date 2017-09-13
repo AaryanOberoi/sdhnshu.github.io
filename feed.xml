@@ -1,37 +1,91 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom"><title>Sudhanshu Passi</title><subtitle>Designer | Deep learning engineer</subtitle><updated>2017-09-11T12:16:07+05:30</updated><id>http://sdhnshu.com/</id><generator uri="https://sparanoid.com/lab/amsf/" version="1.1.8">Almace Scaffolding</generator><link rel="alternate" type="text/html" hreflang="en" href="http://sdhnshu.com/" /><link rel="self" type="application/atom+xml" href="http://sdhnshu.com/feed.xml" /><author><name>Sudhanshu Passi</name><uri>http://sdhnshu.com/</uri><email>sudhanshupassi@gmail.com</email></author><entry><title>Why is deep learning so hyped?</title><id>http://sdhnshu.com/deep-hype.html</id><link rel="alternate" type="text/html" href="http://sdhnshu.com/deep-hype.html" /><published>2017-03-19T00:00:00+05:30</published><updated>2017-09-10T21:18:56+05:30</updated><author><name>Sudhanshu Passi</name><uri>http://sdhnshu.com/</uri><email>sudhanshupassi@gmail.com</email></author><content type="html" xml:base="http://sdhnshu.com/">
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom"><title>Sudhanshu Passi</title><subtitle>Designer | Deep learning engineer</subtitle><updated>2017-09-13T23:55:45+05:30</updated><id>http://sdhnshu.com/</id><generator uri="https://sparanoid.com/lab/amsf/" version="1.1.8">Almace Scaffolding</generator><link rel="alternate" type="text/html" hreflang="en" href="http://sdhnshu.com/" /><link rel="self" type="application/atom+xml" href="http://sdhnshu.com/feed.xml" /><author><name>Sudhanshu Passi</name><uri>http://sdhnshu.com/</uri><email>sudhanshupassi@gmail.com</email></author><entry><title>What exactly is deep learning and why should we be hyped?</title><id>http://sdhnshu.com/deep-hype.html</id><link rel="alternate" type="text/html" href="http://sdhnshu.com/deep-hype.html" /><published>2017-03-19T00:00:00+05:30</published><updated>2017-09-10T21:18:56+05:30</updated><author><name>Sudhanshu Passi</name><uri>http://sdhnshu.com/</uri><email>sudhanshupassi@gmail.com</email></author><content type="html" xml:base="http://sdhnshu.com/">
           
-            &lt;h2 id=&quot;the-problem&quot;&gt;The Problem&lt;/h2&gt;
+            &lt;p&gt;Like most of you reading this article, I am a newbie to deep learning too. With a basic computer science degree, I entered this arena after I saw so much excitement among the people in this community. And once I knew what it was, I got hooked too.&lt;/p&gt;
 
-&lt;p&gt;Unfortunately this project doesn’t work with GitHub Pages or GitHub Pages for projects. There’re some factors that prevent it from generating pages:&lt;/p&gt;
+&lt;p&gt;After Google open-sourced their machine learning library &lt;a href=&quot;https://www.youtube.com/watch?v=oZikw5k_2FM&quot;&gt;Tensorflow&lt;/a&gt;, there has been a lot of talk about ‘deep learning’ and for those who are &lt;em&gt;not&lt;/em&gt; from a technical background, you may wonder what exactly all the hype is about. So without further ado, let’s get into it.&lt;/p&gt;
 
-&lt;ul&gt;
-  &lt;li&gt;Many features Almace Scaffolding provides like live reloading, Less support, inline SVG, and HTML minification are implemented using &lt;a href=&quot;http://gruntjs.com/&quot;&gt;Grunt.js&lt;/a&gt;, it’s not supported by GitHub Pages.&lt;/li&gt;
-  &lt;li&gt;Almace Scaffolding uses the latest pre-release Jekyll, so not all features are supported by GitHub Pages renderers.&lt;/li&gt;
-  &lt;li&gt;GItHub Pages build server &lt;a href=&quot;https://help.github.com/articles/pages-don-t-build-unable-to-run-jekyll#source-setting&quot;&gt;overwrites the &lt;code class=&quot;highlighter-rouge&quot;&gt;source&lt;/code&gt; settings&lt;/a&gt;. This prevent it generating pages from current file structure.&lt;/li&gt;
-&lt;/ul&gt;
+&lt;p&gt;Deep learning is a &lt;em&gt;computer algorithm&lt;/em&gt; inspired by the structure of our brains, and neurologists think there’s something similar but a lot more complicated in our brains that help us humans do so complicated things.&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&quot;assets/img/content.jpg&quot; /&gt;&lt;/p&gt;
+&lt;hr /&gt;
 
-&lt;p&gt;What exactly is deep learning and why should we be hyped?&lt;/p&gt;
+&lt;h1 id=&quot;a-brief-history&quot;&gt;A brief history&lt;/h1&gt;
 
-&lt;p&gt;Like most of you reading this article, I am a newbie to deep learning too. With a basic computer science degree, I entered this arena after I saw so much excitement among the people in this community. And once I knew what it was, I got hooked too.&lt;/p&gt;
+&lt;p&gt;The algorithms for neural networks were &lt;a href=&quot;https://www.google.co.in/search?q=Frank+Rosenblatt&quot;&gt;invented in the 60’s&lt;/a&gt;, but it’s only now that we have enough computation power to carry it out on a large-scale. And our brain has around 1 billion neurons, so we still need a lot of computating power to reach that stage.&lt;/p&gt;
 
-&lt;p&gt;After Google open-sourced their machine learning library Tensorflow, there has been a lot of talk about ‘deep learning’ and for those who are not from a technical background, you may wonder what exactly all the hype is about. So without further ado, let’s get into it.&lt;/p&gt;
+&lt;p&gt;Some important people who have worked in this field are &lt;a href=&quot;https://www.google.co.in/search?q=Geoffrey+Hinton&quot;&gt;Geoffrey Hinton&lt;/a&gt;, &lt;a href=&quot;https://www.quora.com/profile/Yoshua-Bengio&quot;&gt;Yoshua Bengio&lt;/a&gt;, &lt;a href=&quot;https://medium.com/@karpathy&quot;&gt;Andrej Karpathy&lt;/a&gt;, &lt;a href=&quot;https://www.google.co.in/search?q=Yann+Le+Cunn&quot;&gt;Yann Le Cunn&lt;/a&gt;, &lt;a href=&quot;http://www.andrewng.org/&quot;&gt;Andrew Ng&lt;/a&gt;, &lt;a href=&quot;https://www.google.co.in/search?q=sebastian+thrun&quot;&gt;Sebastian Thrun&lt;/a&gt;, &lt;a href=&quot;https://www.quora.com/profile/Ian-Goodfellow#&quot;&gt;Ian Goodfellow&lt;/a&gt;. Be sure to check them out if interested.&lt;/p&gt;
 
-&lt;p&gt;Deep learning is a computer algorithm inspired by the structure of our brains, and neurologists think there’s something similar but a lot more complicated in our brains that help us humans do so complicated things.
-A brief history&lt;/p&gt;
+&lt;hr /&gt;
 
-&lt;p&gt;The algorithms for neural networks were invented in the 60’s, but it’s only now that we have enough computation power to carry it out on a large-scale. And our brain has around 1 billion neurons, so we still need a lot of computating power to reach that stage.&lt;/p&gt;
+&lt;h1 id=&quot;so-how-does-it-work&quot;&gt;So how does it work?&lt;/h1&gt;
 
-&lt;p&gt;Some important people who have worked in this field are Geoffrey Hinton, Yoshua Bengio, Andrej Karpathy, Yann Le Cunn, Andrew Ng, Sebastian Thrun, Ian Goodfellow. Be sure to check them out if interested.
-So how does it work?&lt;/p&gt;
+&lt;p&gt;Traditional programming algorithms make us specify every case that can fall upon it. It breaks if an unspecified case occurs. The deep learning algorithm, however, looks at a lot of inputs and their corresponding outputs and tries to learn a pattern between them. Thus, after this &lt;em&gt;training&lt;/em&gt; it will be able to predict an output when an unknown input is given. A fun visualization is &lt;a href=&quot;http://playground.tensorflow.org/&quot;&gt;here&lt;/a&gt;.&lt;/p&gt;
 
-&lt;p&gt;Traditional programming algorithms make us specify every case that can fall upon it. It breaks if an unspecified case occurs. The deep learning algorithm, however, looks at a lot of inputs and their corresponding outputs and tries to learn a pattern between them. Thus, after this training it will be able to predict an output when an unknown input is given. A fun visualization is here.&lt;/p&gt;
+&lt;p&gt;Underneath, there’s a lot of &lt;a href=&quot;https://www.youtube.com/watch?v=bxe2T-V8XRs&amp;amp;list=PLiaHhY2iBX9hdHaRr6b7XevZtgZRa1PoU&quot;&gt;matrix multiplications, calculus and statistics.&lt;/a&gt; Deep learning is actually an intersection of computer science, data science, neuroscience, and math. We write code that learns by itself and doesn’t need all cases specifically written.&lt;/p&gt;
 
-&lt;p&gt;Underneath, there’s a lot of matrix multiplications, calculus and statistics. Deep learning is actually an intersection of computer science, data science, neuroscience, and math. We write code that learns by itself and doesn’t need all cases specifically written.
-So does it have neurons like our brains have?&lt;/p&gt;
+&lt;hr /&gt;
+
+&lt;h1 id=&quot;so-does-it-have-neurons-like-our-brains-have&quot;&gt;So does it have neurons like our brains have?&lt;/h1&gt;
 
 &lt;p&gt;Yes they do!&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;assets/img/perceptron.jpg&quot; alt=&quot;Perceptron&quot; class=&quot;size-small&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Each circle in this picture is a neuron and there are connections between them. The yellows are inputs and orange is output. Depending on the signal strength of the inputs, the output is decided.&lt;/p&gt;
+
+&lt;p&gt;Stack some of them together and you get neural networks that can do different things:&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;assets/img/dff.jpg&quot; alt=&quot;Feed forward&quot; /&gt;
+&lt;img src=&quot;assets/img/rnn.jpg&quot; alt=&quot;RNNs&quot; /&gt;
+&lt;img src=&quot;assets/img/cnn.jpg&quot; alt=&quot;CNNs&quot; /&gt;
+&lt;img src=&quot;assets/img/gan.jpg&quot; alt=&quot;GANs&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;em&gt;Picture credits: Fjodor van Veen — asimovinstitute.org&lt;/em&gt;&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;h1 id=&quot;who-should-be-hyped&quot;&gt;Who should be hyped?&lt;/h1&gt;
+
+&lt;p&gt;Everyone. Artificial neural networks have broken all records in image recognition and excels in a lot of other fields. Let me give you some examples:&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;A recurrent neural network defeated the world champion for the 5th time in the hardest game in the world, &lt;a href=&quot;https://www.youtube.com/watch?v=TnUYcTuZJpM&amp;amp;feature=youtu.be&amp;amp;t=28s&quot;&gt;Go&lt;/a&gt;, in March 2016&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;Nvidia, Tesla and Google are using convolutional networks for their &lt;a href=&quot;https://www.youtube.com/watch?v=qhUvQiKec2U&quot;&gt;self driving cars&lt;/a&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;Google, Netflix, Amazon, and Facebook use neural networks for recommending what movie or product you would like, or whom you would like&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;Banks use neural networks for &lt;a href=&quot;https://youtu.be/vOppzHpvTiQ?t=1m33s&quot;&gt;fraud detection&lt;/a&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;It is the state of the art in voice to text conversion, handwriting recognition and natural language processing&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;Art generation app &lt;a href=&quot;http://prisma-ai.com/&quot;&gt;Prisma&lt;/a&gt; uses convolutional neural networks&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;Researchers are using it for &lt;a href=&quot;https://youtu.be/BmkA1ZsG2P4?t=6m39s&quot;&gt;drug discovery&lt;/a&gt; and for &lt;a href=&quot;https://www.youtube.com/watch?v=iOWamCtnwTc&quot;&gt;simulating physics&lt;/a&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;According to the godfather of deep learning, &lt;a href=&quot;https://www.youtube.com/watch?v=XG-dwZMc7Ng&quot;&gt;Geoffrey Hinton&lt;/a&gt;, deep learning is going to disrupt a lot of fields in the coming 5 yrs and we can already see it.&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;h1 id=&quot;theres-also-another-perspective-to-it&quot;&gt;There’s also another perspective to it&lt;/h1&gt;
+
+&lt;p&gt;Some people may feel this is not a good thing as this may put us in a situation where machines might overpower us, but a lot of it is very far away and that’s why organizations like &lt;a href=&quot;https://www.youtube.com/watch?v=AbcRlDBnwjM&quot;&gt;OpenAI, funded by Elon Musk&lt;/a&gt; were found that aim to democratize artificial intelligence.&lt;/p&gt;
+
+&lt;p&gt;It’s true that artificial intelligence will soon replace our menial jobs and it can’t be stopped. We won’t be driving our vehicles in some years, perhaps we might be able to solve the energy crisis using artificial neural networks.&lt;/p&gt;
+
+&lt;p&gt;In the end, a knife can be used for good as well as for bad. Think before you do something, because the possibilities with a synthetic brain are endless. We have again reached a moment in history where we transcend ourselves and take humanity forward. It’s our responsibility to use it wisely.&lt;/p&gt;
 
           
           

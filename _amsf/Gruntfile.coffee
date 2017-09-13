@@ -570,8 +570,6 @@ module.exports = (grunt) ->
         # online: true
         open: true
         browser: [
-          "safari"
-          "google chrome"
           "firefox"
         ]
         notify: true
