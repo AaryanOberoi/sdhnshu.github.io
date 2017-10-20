@@ -1,0 +1,845 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!doctype html>
+
+
+  <meta charset="utf-8">
+
+
+<title>Image classifier - Sudhanshu Passi</title>
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<!-- Define a description for better SEO result -->
+<meta name="description" content="This was my second project in Udacity’s Deep Learning Nanodegree Foundation course where we took the CIFAR 10 database, a classic image classification dataset and trained a basic Convolutional Neural Network to classify between the 10 categories specified: airplane automobile...">
+
+<!-- Cheome Web App theme color -->
+<meta name="theme-color" content="#FFB60F">
+
+<!-- Feed URL -->
+<link rel="alternate" href="/feed.xml" type="application/atom+xml">
+
+<!-- Site icons -->
+
+  
+    
+
+    
+
+    
+
+    
+  
+    
+
+    
+
+    
+
+    
+  
+    
+
+    
+
+    
+
+    
+  
+    
+
+    
+
+    
+
+    
+  
+    
+
+    
+
+    
+
+    
+  
+    
+
+    
+
+    
+
+    
+  
+    
+
+    
+
+    
+
+    
+  
+    
+
+    
+
+    
+
+    
+  
+    
+
+    
+
+    
+
+    
+  
+    
+
+    
+
+    
+
+    
+  
+    
+
+    
+
+    
+
+    
+  
+    
+
+    
+
+    
+
+    
+  
+    
+
+    
+
+    
+
+    
+  
+    
+
+    
+
+    
+
+    
+  
+    
+
+    
+
+    
+
+    
+  
+    
+
+    
+
+    
+
+    
+  
+    
+
+    
+
+    
+
+    
+  
+    
+
+    
+
+    
+
+    
+  
+    
+
+    
+
+    
+
+    
+  
+    
+
+    
+
+    
+
+    
+  
+    
+
+    
+
+    
+
+    
+  
+    
+
+    
+
+    
+
+    
+  
+    
+
+    
+
+    
+
+    
+  
+    
+
+    
+
+    
+
+    
+  
+
+
+<!-- Chrome Web App manifest -->
+<link rel="manifest" href="/manifest.json">
+
+<!-- Main CSS -->
+<link rel="stylesheet" href="/assets/themes/curtana/css/app.css?assets-inline">
+
+<!-- Canonical links, avoid duplicate content problems -->
+<link rel="canonical" href="http://sdhnshu.com/tf-img-classifier.html">
+
+<!-- DNS prefetching for static files -->
+
+
+<!-- browser-sync, don't remove this -->
+<!-- BS_INSERT -->
+
+<!-- Head hooks -->
+
+
+<!-- Open Graph and Twitter Cards support, more info: https://dev.twitter.com/docs/cards -->
+<meta property="og:type" content="article">
+<meta property="og:site_name" content="Sudhanshu Passi">
+<meta property="og:title" content="Image classifier">
+<meta property="og:url" content="http://sdhnshu.com/tf-img-classifier.html">
+<meta property="og:description" content="This was my second project in Udacity’s Deep Learning Nanodegree Foundation course where we took the CIFAR 10 database, a classic image classification dataset and trained a basic Convolutional Neural Network to classify between the 10 categories specified: airplane automobile...">
+<meta property="og:image" content="http://sdhnshu.com/logo.png">
+
+<meta name="twitter:card" content="summary_large_image">
+
+
+  <meta name="twitter:site" content="@Sudhanshupassi">
+
+
+
+  <meta name="twitter:creator" content="@Sudhanshupassi">
+
+
+
+  <meta property="article:published_time" content="2017-03-05T00:00:00+05:30">
+  <meta property="article:modified_time" content="">
+  <meta name="twitter:label1" value="Words">
+  <meta name="twitter:data1" value="81 words">
+  <meta name="twitter:label2" value="Reading time">
+  <meta name="twitter:data2" value="Less than 1 min">
+
+
+<!-- Post specified styles -->
+<style data-assets-inline>
+  /*
+    TODO: You have to speicify background color for `html` in order to make `-webkit-filter` work
+    Link: https://bugs.chromium.org/p/chromium/issues/detail?id=591015
+    Date: Mar 1, 2016, 5:41 PM
+  */
+  html {
+    
+    background-color: #FFB60F;
+    
+  }
+
+  body {
+    
+    color: #000000;
+    
+
+    
+    background-color: #FFB60F;
+    
+
+    
+  }
+
+  
+  a,
+  button {
+    color: #000000;
+  }
+  
+
+  
+  ::selection {
+    color: #a57d22;
+  }
+  
+
+  
+  .navigation li a:hover,
+  .navigation li a:focus {
+    color: #a57d22;
+  }
+  
+
+  
+  
+    
+
+  
+  .current a {
+    color: #a57d22;
+  }
+
+  .content a {
+    color: #a57d22;
+  }
+  
+
+  
+  .content code,
+  .content pre {
+    color: #a57d22;
+  }
+  
+
+  /*
+    TODO: Need a better solution. I have to redefine the whole box-shadow here because no invidual box-shadow-color exists
+    Date: Mar 12, 2016, 12:09 AM
+  */
+  
+  .content hr::before,
+  .footnotes::before {
+    background: #000000;
+    box-shadow: 24px 0 0 0 #000000, -24px 0 0 0 #000000;
+  }
+  
+
+  
+  .note,
+  .store,
+  .download {
+    border-left-color: #a57d22;
+  }
+  
+
+  
+  .external .dot {
+    background: #a57d22;
+  }
+  
+
+  
+  :target [rev=footnote],
+  :target [rel=footnote],
+  :target .reversefootnote,
+  :target .footnote {
+    color: #a57d22;
+  }
+  
+</style>
+
+<!-- Main navigation with current page / categoriy highlighted -->
+<nav class="navigation">
+  <ul>
+    
+      
+
+
+
+
+
+
+
+
+      
+      
+      <li >
+        <a href="/">
+          
+            HOME
+          
+        </a>
+      </li>
+    
+      
+
+
+
+
+
+
+
+
+      
+      
+      <li >
+        <a href="/work/">
+          
+            work
+          
+        </a>
+      </li>
+    
+      
+
+
+
+
+
+
+
+
+      
+      
+      <li >
+        <a href="/blog/">
+          
+            Blog
+          
+        </a>
+      </li>
+    
+      
+
+
+
+
+
+
+
+
+      
+      
+      <li >
+        <a href="/about/">
+          
+            About
+          
+        </a>
+      </li>
+    
+  </ul>
+</nav>
+
+<!-- Main content wrap -->
+<main class="content " role=main>
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- Post-wide custom CSS -->
+
+  
+
+
+<!-- Article wrapper, limit width -->
+<article 
+  
+>
+
+  <!-- Post title -->
+  <header 
+  style="     "
+>
+
+    <h1 class="
+  
+" title="Image classifier" data-title="Image classifier">
+      
+  
+    
+  
+    Image classifier<span class="dot dot--post"> </span>
+  
+
+  
+
+    </h1>
+
+    
+      <small>
+        By <span rel="author">Sudhanshu Passi</span>
+        on <time datetime="2017-03-05T00:00:00+05:30">Mar 5, 2017</time>
+      </small>
+    
+
+    
+
+  </header>
+
+  <!-- Post content -->
+  <div class="post-content">
+    <p>This was my second project in Udacity’s Deep Learning Nanodegree Foundation course where we took the <em><a href="https://www.cs.toronto.edu/~kriz/cifar.html">CIFAR 10 database</a></em>, a classic image classification dataset and trained a basic <strong>Convolutional Neural Network</strong> to classify between the 10 categories specified:</p>
+<ul>
+  <li>airplane</li>
+  <li>automobile</li>
+  <li>bird</li>
+  <li>cat</li>
+  <li>deer</li>
+  <li>dog</li>
+  <li>frog</li>
+  <li>horse</li>
+  <li>ship</li>
+  <li>truck</li>
+</ul>
+
+<p>This project was implemented in Tensorflow and no advanced concepts were used, thus we were able to get only around 60% accuracy.</p>
+
+<p>Feel free to check it out <em><a href="https://github.com/sdhnshu/image-classification">github</a></em></p>
+
+
+    
+    
+
+    
+  </div>
+
+</article>
+
+
+</main>
+
+<!-- Footer section -->
+
+  <footer class="footer">
+    <ul>
+      <li><a href="https://github.com/sdhnshu">Github</a></li>
+      <li><a href="https://www.behance.net/sdhnshu">Behance</a></li>
+      <li><a href="https://www.linkedin.com/in/sdhnshu/">LinkedIn</a></li>
+      
+      
+
+      <!-- 
+        <li><a href="/email-signup/" title="Subscribe">Email</a></li>
+       -->
+
+      <li><a href="/feed.xml" title="Feed (The Atom Syndication Format)">Atom</a></li>
+    </ul>
+  </footer>
+
+
+<!-- Theme scripts -->
+<script src="/assets/themes/curtana/js/app.js?assets-inline"></script>
+
+<!-- User scripts -->
+<script src="/assets/js/user.js?assets-inline"></script>
+
+<!-- Lightense Images -->
+
+  <script src="/assets/themes/curtana/js/lightense.min.js?assets-inline"></script>
+  <script>
+    window.addEventListener('load', function () {
+      Lightense('p > img:not(.no-lightense),.lightense');
+    }, false);
+  </script>
+
+
+<!-- Service Worker  -->
+
+  
+
+
+<!-- Google Analytics -->
+
+  
+    <script>
+      (function(a,m,s,f,j,k,l){a['GoogleAnalyticsObject']=j;a[j]=a[j]||function(){
+      (a[j].q=a[j].q||[]).push(arguments)},a[j].l=1*new Date();k=m.createElement(s),
+      l=m.getElementsByTagName(s)[0];k.async=1;k.src=f;l.parentNode.insertBefore(k,l)
+      })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+      ga('create', 'UA-83000432-2', 'auto');
+      ga('send', 'pageview');
+    </script>
+  
+
+
+<!-- Foot hooks -->
+
+
+

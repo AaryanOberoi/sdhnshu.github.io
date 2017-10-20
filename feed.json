@@ -1,1 +1,448 @@
-[{"title":"What exactly is deep learning and why should we be hyped?","permalink":"http://sdhnshu.com/deep-hype.html","link":"http://sdhnshu.com/deep-hype.html","date":"2017-03-19T00:00:00+05:30","modified":"2017-09-10T21:18:56+05:30","author":{"name":"Sudhanshu Passi","url":"http://sdhnshu.com/","email":"sudhanshupassi@gmail.com"},"content":"<p>Like most of you reading this article, I am a newbie to deep learning too. With a basic computer science degree, I entered this arena after I saw so much excitement among the people in this community. And once I knew what it was, I got hooked too.</p>\n\n<p>After Google open-sourced their machine learning library <a href=\"https://www.youtube.com/watch?v=oZikw5k_2FM\">Tensorflow</a>, there has been a lot of talk about ‘deep learning’ and for those who are <em>not</em> from a technical background, you may wonder what exactly all the hype is about. So without further ado, let’s get into it.</p>\n\n<p>Deep learning is a <em>computer algorithm</em> inspired by the structure of our brains, and neurologists think there’s something similar but a lot more complicated in our brains that help us humans do so complicated things.</p>\n\n<hr />\n\n<h1 id=\"a-brief-history\">A brief history</h1>\n\n<p>The algorithms for neural networks were <a href=\"https://www.google.co.in/search?q=Frank+Rosenblatt\">invented in the 60’s</a>, but it’s only now that we have enough computation power to carry it out on a large-scale. And our brain has around 1 billion neurons, so we still need a lot of computating power to reach that stage.</p>\n\n<p>Some important people who have worked in this field are <a href=\"https://www.google.co.in/search?q=Geoffrey+Hinton\">Geoffrey Hinton</a>, <a href=\"https://www.quora.com/profile/Yoshua-Bengio\">Yoshua Bengio</a>, <a href=\"https://medium.com/@karpathy\">Andrej Karpathy</a>, <a href=\"https://www.google.co.in/search?q=Yann+Le+Cunn\">Yann Le Cunn</a>, <a href=\"http://www.andrewng.org/\">Andrew Ng</a>, <a href=\"https://www.google.co.in/search?q=sebastian+thrun\">Sebastian Thrun</a>, <a href=\"https://www.quora.com/profile/Ian-Goodfellow#\">Ian Goodfellow</a>. Be sure to check them out if interested.</p>\n\n<hr />\n\n<h1 id=\"so-how-does-it-work\">So how does it work?</h1>\n\n<p>Traditional programming algorithms make us specify every case that can fall upon it. It breaks if an unspecified case occurs. The deep learning algorithm, however, looks at a lot of inputs and their corresponding outputs and tries to learn a pattern between them. Thus, after this <em>training</em> it will be able to predict an output when an unknown input is given. A fun visualization is <a href=\"http://playground.tensorflow.org/\">here</a>.</p>\n\n<p>Underneath, there’s a lot of <a href=\"https://www.youtube.com/watch?v=bxe2T-V8XRs&amp;list=PLiaHhY2iBX9hdHaRr6b7XevZtgZRa1PoU\">matrix multiplications, calculus and statistics.</a> Deep learning is actually an intersection of computer science, data science, neuroscience, and math. We write code that learns by itself and doesn’t need all cases specifically written.</p>\n\n<hr />\n\n<h1 id=\"so-does-it-have-neurons-like-our-brains-have\">So does it have neurons like our brains have?</h1>\n\n<p>Yes they do!</p>\n\n<p><img src=\"assets/img/perceptron.jpg\" alt=\"Perceptron\" class=\"size-small\" /></p>\n\n<p>Each circle in this picture is a neuron and there are connections between them. The yellows are inputs and orange is output. Depending on the signal strength of the inputs, the output is decided.</p>\n\n<p>Stack some of them together and you get neural networks that can do different things:</p>\n\n<p><img src=\"assets/img/dff.jpg\" alt=\"Feed forward\" />\n<img src=\"assets/img/rnn.jpg\" alt=\"RNNs\" />\n<img src=\"assets/img/cnn.jpg\" alt=\"CNNs\" />\n<img src=\"assets/img/gan.jpg\" alt=\"GANs\" /></p>\n\n<p><em>Picture credits: Fjodor van Veen — asimovinstitute.org</em></p>\n\n<hr />\n\n<h1 id=\"who-should-be-hyped\">Who should be hyped?</h1>\n\n<p>Everyone. Artificial neural networks have broken all records in image recognition and excels in a lot of other fields. Let me give you some examples:</p>\n\n<blockquote>\n  <p>A recurrent neural network defeated the world champion for the 5th time in the hardest game in the world, <a href=\"https://www.youtube.com/watch?v=TnUYcTuZJpM&amp;feature=youtu.be&amp;t=28s\">Go</a>, in March 2016</p>\n</blockquote>\n\n<blockquote>\n  <p>Nvidia, Tesla and Google are using convolutional networks for their <a href=\"https://www.youtube.com/watch?v=qhUvQiKec2U\">self driving cars</a></p>\n</blockquote>\n\n<blockquote>\n  <p>Google, Netflix, Amazon, and Facebook use neural networks for recommending what movie or product you would like, or whom you would like</p>\n</blockquote>\n\n<blockquote>\n  <p>Banks use neural networks for <a href=\"https://youtu.be/vOppzHpvTiQ?t=1m33s\">fraud detection</a></p>\n</blockquote>\n\n<blockquote>\n  <p>It is the state of the art in voice to text conversion, handwriting recognition and natural language processing</p>\n</blockquote>\n\n<blockquote>\n  <p>Art generation app <a href=\"http://prisma-ai.com/\">Prisma</a> uses convolutional neural networks</p>\n</blockquote>\n\n<blockquote>\n  <p>Researchers are using it for <a href=\"https://youtu.be/BmkA1ZsG2P4?t=6m39s\">drug discovery</a> and for <a href=\"https://www.youtube.com/watch?v=iOWamCtnwTc\">simulating physics</a></p>\n</blockquote>\n\n<p>According to the godfather of deep learning, <a href=\"https://www.youtube.com/watch?v=XG-dwZMc7Ng\">Geoffrey Hinton</a>, deep learning is going to disrupt a lot of fields in the coming 5 yrs and we can already see it.</p>\n\n<hr />\n\n<h1 id=\"theres-also-another-perspective-to-it\">There’s also another perspective to it</h1>\n\n<p>Some people may feel this is not a good thing as this may put us in a situation where machines might overpower us, but a lot of it is very far away and that’s why organizations like <a href=\"https://www.youtube.com/watch?v=AbcRlDBnwjM\">OpenAI, funded by Elon Musk</a> were found that aim to democratize artificial intelligence.</p>\n\n<p>It’s true that artificial intelligence will soon replace our menial jobs and it can’t be stopped. We won’t be driving our vehicles in some years, perhaps we might be able to solve the energy crisis using artificial neural networks.</p>\n\n<p>In the end, a knife can be used for good as well as for bad. Think before you do something, because the possibilities with a synthetic brain are endless. We have again reached a moment in history where we transcend ourselves and take humanity forward. It’s our responsibility to use it wisely.</p>","excerpt":"Explaining the importance of deep learning","languages":null,"categories":[],"tags":["blog-post"]}]
+[
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+    
+    {
+      "title": "How do I get into this? Where do I start?",
+      "permalink": "http://sdhnshu.com/my-journey.html",
+      "link": "http://sdhnshu.com/my-journey.html",
+      "date": "2017-10-06T00:00:00+05:30",
+      
+      "author": {
+        "name": "Sudhanshu Passi",
+        "url": "http://sdhnshu.com/",
+        "email": "sudhanshupassi@gmail.com"
+      },
+      "content": "<p>I got interested in deep learning almost a year ago in December 2016. I was searching for something cool for my final year project. This was <em>the</em> thing at that time.</p>\n\n<p>So I started searching for ways to learn as I knew absolutely nothing about ML or Python. The one thing that I found, recommended everywhere was the <a href=\"https://www.coursera.org/learn/machine-learning\">Andrew Ng’s 2008 Coursera course</a>. He’s the founder of Coursera and this was the first course that he put on Coursera (in 2008!!). So I did that course. It has all the basic Math necessary for Machine Learning and is really really important if you wanna know what is going underneath the ML libraries. <em>Highly recommended</em>.</p>\n\n<p><img src=\"assets/img/ng-coursera.png\" alt=\"Andrew Ng Coursera\" class=\"size-small\" /></p>\n\n<p>Then I did the <a href=\"https://in.udacity.com/course/intro-to-machine-learning--ud120\">Intro to ML course</a> by the founder of Udacity, ex-VP of Google: Sebastian Thrun. There you’ll get familiar with Python and a basic ML library: scikit learn. It’s a new age course where they teach you how to get around python libraries (which is a vast corpus). I found it really helpful as it got me straight into python with ML.</p>\n\n<p>In the meantime, I was also watching <a href=\"https://www.youtube.com/channel/UCWN3xxRkmTPmbKwht9FuE5A\">Siraj Raval’s videos</a> (I was one of his 20k subscribers) which went straight over my head btw. (That guy is more hype, less knowledge). You don’t get much to learn from him but can get the idea of the scope of the deep learning scene.</p>\n\n<p>While I finished all these things, Siraj mentioned in one of his videos that he was planning a <em>Nanodegree</em>. After a couple of days, I saw a new nano degree on Udacity called “Deep Learning Nanodegree Foundation”. I took it immediately. It was 20k Rupees at that time. I did not regret paying that much at that time. But by the time you are reading this, there might be several other deep learning courses on the internet. At the time of this writing, I really like the <a href=\"http://course.fast.ai/\">Fast.ai course</a>. It takes you through the practicality of it.</p>\n\n<p><img src=\"assets/img/fastai.png\" alt=\"Fast.ai\" class=\"size-small\" /></p>\n\n<p>Also, one really important youtube courses that helped me a lot was <a href=\"https://www.youtube.com/watch?v=NfnWJUyUJYU&amp;list=PLkt2uSq6rBVctENoVBg1TpCC7OQi31AlC\">Andrej Karpathy’s CS231n Winter 2016</a>. He’s one of the pioneers in deep learning. He was a Ph.D. student at Stanford. He has also been the head of Open AI, backed by Elon Musk, and has now moved to Tesla as the self-driving head. A really great guy. His blog is really helpful. Check it out at <a href=\"https://karpathy.github.io/\">this link</a></p>\n\n<p><img src=\"assets/img/karpathy-blog.png\" alt=\"Karpathy blog\" class=\"size-small\" /></p>\n\n<p>One more thing that helped me a lot (and is still helping me a lot) is following these people on Twitter. You can get really great information from these pioneers from their twitter accounts. The people I follow on twitter are:</p>\n<ul>\n  <li>Andrej Karpathy</li>\n  <li>Yann LeCun (Founder of CNNs)</li>\n  <li>Fe Fe Li (Andrej’s mentor)</li>\n  <li>Sebastian Thrun</li>\n  <li>Andrew Ng</li>\n  <li>Soumith Chintala (Head of FAIR, PyTorch)</li>\n  <li>Ian Goodfellow (Founder of GANs)</li>\n  <li>Elon Musk (coz he’s awesome)</li>\n  <li>Demmis Hassabis (Founder of DeepMind, now a part of Google)</li>\n  <li>Google Research</li>\n  <li>Deep Mind</li>\n  <li>Open AI</li>\n  <li>Baidu Research</li>\n  <li>Facebook Artificial Intelligence and Reseach</li>\n  <li>Tensorflow</li>\n  <li>PyTorch</li>\n  <li>Distill publication (The best publication on deep learning)</li>\n  <li>Geoffrey Hinton (if he were there I would follow him)</li>\n  <li>Yoshua Bengio (if he were there I would follow him)</li>\n</ul>\n\n<p>One more place that you can get the first-hand knowledge about what’s happening in the community is the Reddit channel: <a href=\"https://www.reddit.com/r/MachineLearning/\">/r/MachineLearning</a></p>\n\n<p><img src=\"assets/img/reddit-ml.png\" alt=\"Reddit ML\" class=\"size-small\" /></p>\n\n<p>If you don’t use twitter or Reddit but use slack, you can use my <a href=\"https://join.slack.com/t/sdhnshu/shared_invite/enQtMjU0NjM3OTY1NTA1LTMwM2E4NTBjZGRjYjNjMDhkZmY4MzZjOGRkOWNlMmRjZGNkZjIxMzcyOGUxZDkwYjgzNjUyYTg2YTZjZTczYjQ\">slack group: sdhnshu.slack.com</a>. I have channels where you get news from all these guys via twitter and also the most important news from the hot section of /r/MachineLearning. It’s a place to be for all the ML news. I personally use it and you can use it too for all the news in a single place.</p>\n\n<p><img src=\"assets/img/slack.png\" alt=\"My slack\" class=\"size-small\" /></p>\n\n<hr />\n\n<p>Since then, I’ve been able to implement my own things by reading their papers on <a href=\"https://arxiv.org/\">arxiv.org</a>. Also to keep track of all the papers coming in day by day you can use Andrej’s tool: <a href=\"http://arxiv-sanity.com/\">Arxiv Sanity Preserver</a>. It uses ML to sort papers and recommends you relevant papers. Amazing work Andrej.</p>\n\n<p><img src=\"assets/img/arxiv-sanity.png\" alt=\"Arxiv sanity\" class=\"size-small\" /></p>\n\n<hr />\n\n<p>Hope my journey inspires you to get into deep learning as the more the people are into it, the better.</p>",
+      "excerpt": "My journey since last December",
+      "languages": null,
+      "categories": [],
+      "tags": ["blog-post"]
+    }
+    
+  
+
+  
+    ,
+    {
+      "title": "Image captioning in PyTorch",
+      "permalink": "http://sdhnshu.com/pyt-img-captioning.html",
+      "link": "http://sdhnshu.com/pyt-img-captioning.html",
+      "date": "2017-09-03T00:00:00+05:30",
+      
+      "author": {
+        "name": "Sudhanshu Passi",
+        "url": "http://sdhnshu.com/",
+        "email": "sudhanshupassi@gmail.com"
+      },
+      "content": "<p>Feel free to check it out <em><a href=\"https://github.com/sdhnshu/pytorch-model-zoo/tree/coco-captions/img%20captioning\">github</a></em></p>",
+      "excerpt": "Feel free to check it out github",
+      "languages": null,
+      "categories": [],
+      "tags": ["current"]
+    }
+    
+  
+
+  
+    ,
+    {
+      "title": "Style transfer in PyTorch",
+      "permalink": "http://sdhnshu.com/pyt-style-transfer.html",
+      "link": "http://sdhnshu.com/pyt-style-transfer.html",
+      "date": "2017-09-01T00:00:00+05:30",
+      
+      "author": {
+        "name": "Sudhanshu Passi",
+        "url": "http://sdhnshu.com/",
+        "email": "sudhanshupassi@gmail.com"
+      },
+      "content": "<p>A VGG19 model, readily provided by the PyTorch was used for this project. The output from its 0, 5, 10, 19 and 28 layers was used as the style and content components.</p>\n\n<p>Here is an example passed through the network:</p>\n\n<p><img src=\"assets/img/style-emma.jpg\" alt=\"emma\" /></p>\n\n<p>Feel free to check it out <em><a href=\"https://github.com/sdhnshu/pytorch-model-zoo/tree/master/artistic%20style%20transfer\">github</a></em></p>",
+      "excerpt": "A VGG19 model, readily provided by the PyTorch was used for this project. The output from its 0, 5, 10, 19 and 28 layers was used as the style and content components.",
+      "languages": null,
+      "categories": [],
+      "tags": ["deep"]
+    }
+    
+  
+
+  
+    ,
+    {
+      "title": "Deep Conv Generative Adverserial Net in Pytorch",
+      "permalink": "http://sdhnshu.com/pyt-dcgan.html",
+      "link": "http://sdhnshu.com/pyt-dcgan.html",
+      "date": "2017-08-25T00:00:00+05:30",
+      
+      "author": {
+        "name": "Sudhanshu Passi",
+        "url": "http://sdhnshu.com/",
+        "email": "sudhanshupassi@gmail.com"
+      },
+      "content": "<p>GANs are one of the most interesting innovations in deep learning till date. Two networks competing to make each other better. But there is still a long way to go for GANs.</p>\n\n<p>This is DCGAN. One of the countless Generative Adverserial networks. This <a href=\"https://arxiv.org/pdf/1511.06434.pdf\">paper</a> was published by one of the major contributors of PyTorch.</p>\n\n<p><img src=\"assets/img/dcgan.jpg\" alt=\"DCGAN\" /></p>\n\n<p>The discriminator is feeded images from two sources: randomly sampled from <em>real images</em>, and the images <em>generated from the generator</em>. The generator learns to fake images that look similar to the real dataset and the discriminator learns to label which images are real. The optimum would be reached when the discriminator labels all images as real.</p>\n\n<p>Then we take the generator and generate new images from it.</p>\n\n<p>In this project I trained the network on a dataset of faces(<a href=\"http://vis-www.cs.umass.edu/lfw/#deepfunnel-anchor\">LFW deepfunneled</a>). Here are some samples that a the trained generator generated:</p>\n\n<p><img src=\"assets/img/sampled.png\" alt=\"sample\" /></p>\n\n<p>Feel free to check it out <em><a href=\"https://github.com/sdhnshu/pytorch-model-zoo/tree/master/dcgan\">github</a></em></p>",
+      "excerpt": "GANs are one of the most interesting innovations in deep learning till date. Two networks competing to make each other better. But there is still a long way to go for GANs.",
+      "languages": null,
+      "categories": [],
+      "tags": ["deep"]
+    }
+    
+  
+
+  
+    ,
+    {
+      "title": "ResNet in PyTorch",
+      "permalink": "http://sdhnshu.com/pyt-resnet.html",
+      "link": "http://sdhnshu.com/pyt-resnet.html",
+      "date": "2017-08-20T00:00:00+05:30",
+      
+      "author": {
+        "name": "Sudhanshu Passi",
+        "url": "http://sdhnshu.com/",
+        "email": "sudhanshupassi@gmail.com"
+      },
+      "content": "<p>This is the first of the collection of deep learning models I am building in PyTorch. Its the ResNet 2015 by Microsoft <a href=\"https://arxiv.org/pdf/1512.03385.pdf\">(arxiv link).</a></p>\n\n<p>The new concept of <strong>Residuals</strong> was introduced with ResNet. It helps training very deep networks train faster. The paper proposed by Microsoft had 33 convolution layers and is able to train in the same amount of time as a normal network with a greater accuracy than a normal network. It won the ImageNet 2015 image classification challenge.</p>\n\n<p>The Structure of a Residual block is:</p>\n<div class=\"highlighter-rouge\"><pre class=\"highlight\"><code>Conv with batch norm\nRelu\nConv with batch norm\nDownsample if present\nResisual\nRelu\n</code></pre>\n</div>\n\n<p>The ResNet structure implemented in this project is:</p>\n<div class=\"highlighter-rouge\"><pre class=\"highlight\"><code>Conv with batch norm\nRelu\n\nResidual Block\nResidual Block\n\nResidual Block with downsampling\nResidual Block\nResidual Block \n\nResidual Block with downsampling\nResidual Block\nResidual Block \n\nAvg pool\nFully connected\n</code></pre>\n</div>\n\n<p>Feel free to check it out <em><a href=\"https://github.com/sdhnshu/pytorch-model-zoo/tree/master/resnet\">github</a></em></p>",
+      "excerpt": "This is the first of the collection of deep learning models I am building in PyTorch. Its the ResNet 2015 by Microsoft (arxiv link).",
+      "languages": null,
+      "categories": [],
+      "tags": ["deep"]
+    }
+    
+  
+
+  
+    ,
+    {
+      "title": "Language translator",
+      "permalink": "http://sdhnshu.com/tf-language-translator.html",
+      "link": "http://sdhnshu.com/tf-language-translator.html",
+      "date": "2017-06-27T00:00:00+05:30",
+      
+      "author": {
+        "name": "Sudhanshu Passi",
+        "url": "http://sdhnshu.com/",
+        "email": "sudhanshupassi@gmail.com"
+      },
+      "content": "<p>This was the fourth project in the Deep learning course where we built a <strong>seq-to-seq</strong> network in Tensorflow containing an LSTM encoder and an LSTM decoder.</p>\n\n<p>A basic french to english dataset was provided and can be found in the repository. A trained checkpoint with an accuracy of 95% is also linked in the repo.</p>\n\n<div class=\"highlighter-rouge\"><pre class=\"highlight\"><code>'he saw a old yellow truck.' --(trained network)-&gt; 'il a vu un vieux camion jaune.'\n</code></pre>\n</div>\n\n<p>Feel free to check it out <em><a href=\"https://github.com/sdhnshu/seq-to-seq\">github</a></em></p>",
+      "excerpt": "This was the fourth project in the Deep learning course where we built a seq-to-seq network in Tensorflow containing an LSTM encoder and an LSTM decoder.",
+      "languages": null,
+      "categories": [],
+      "tags": ["deep"]
+    }
+    
+  
+
+  
+    ,
+    {
+      "title": "Holmes bot",
+      "permalink": "http://sdhnshu.com/tf-holmes-bot.html",
+      "link": "http://sdhnshu.com/tf-holmes-bot.html",
+      "date": "2017-06-09T00:00:00+05:30",
+      
+      "author": {
+        "name": "Sudhanshu Passi",
+        "url": "http://sdhnshu.com/",
+        "email": "sudhanshupassi@gmail.com"
+      },
+      "content": "<p>This project implements a minimal Recurrent Neural Network (LSTM) in Tensorflow. The network trains and samples on a character level, in this case from all the Sherlock Holmes novels.</p>\n\n<p>Here is something it generated after training for 100 epochs:</p>\n<div class=\"highlighter-rouge\"><pre class=\"highlight\"><code>Holmes showed them how we had no such an end of the stuck to my own\ncountry, and he could not hope with the concealed water who were\ndistinguished at the time in the house. I was sitinally that they had\nseen a fair serven and there were nothing to think. I was the lumour\nof his professional country and were standing than to tell him.\n\n\"I wanted to see that the man that I was able to discover that a cas\nis that this secret as well. It is not so many than any of the\nmatter and a considerable poor frankly. He is the subject which was\nclosely.\"\n\n\"I take the morning. It is a supper which you have taken out in your\nfair first thing.\"\n\n\"What did you make of your house?\"\n\n\"I have no day?\"\n\n\"Yes, I can say, and we are never and his son.\"\n\n\"And you cannot assist that? Who is it?\"\n\n\"I am glad at our face. I would sure the more important than to the\nsound which I have not seen the corner which has been a converse of\nthe most communication as to the sentence window out why we can. The old\ncruel to the professor was in my companions and a letter, but the\ntamb of the hall was one in the side of the door. A compellette as I\nsaw, as you see, a dead man without a moment when the clumber of\ncarriage stepped his constetce. The stairs were not taken about it\nwith the string. Here he walked out of my professional, but when we at\nhim as I had always seem to be a man, sir. He had not hit heed against the\npassages and had, so I had seen the pleasure of a sergeant that it was\nnot once to be a lately and table for a muscular. Hunder they were\nsure of himself thickly was impendented in this man with him. He came\nto the door, and then to send all the room. It came to the clothes of\nthe most, and which I had confessing that I have been claim in a\ndelate. I was not far to see that he was always anything, so I would\nbe supprised.\"\n</code></pre>\n</div>\n\n<p>The checkpoints trained on a GTX 1080 for 100 epochs can be found <a href=\"https://drive.google.com/file/d/0B24n6xHwJ0h0MXR3MXRRQUd2N3M/view?usp=sharing\">here</a>. The loss in the end was 1.1275</p>\n\n<p>You can train it on your own dataset by replacing the ‘holmes.txt’ with your own file and running train.py</p>\n\n<p>Feel free to check it out <em><a href=\"https://github.com/sdhnshu/holmes-bot\">github</a></em></p>",
+      "excerpt": "This project implements a minimal Recurrent Neural Network (LSTM) in Tensorflow. The network trains and samples on a character level, in this case from all the Sherlock Holmes novels.",
+      "languages": null,
+      "categories": [],
+      "tags": ["deep"]
+    }
+    
+  
+
+  
+    ,
+    {
+      "title": "Style transfer on FloydHub",
+      "permalink": "http://sdhnshu.com/tf-style-transfer-floyd.html",
+      "link": "http://sdhnshu.com/tf-style-transfer-floyd.html",
+      "date": "2017-04-21T00:00:00+05:30",
+      
+      "author": {
+        "name": "Sudhanshu Passi",
+        "url": "http://sdhnshu.com/",
+        "email": "sudhanshupassi@gmail.com"
+      },
+      "content": "<p>Here I have implemented the first style transfer paper that came out in <a href=\"https://arxiv.org/pdf/1508.06576.pdf\">2015 by Gatys et al.</a> in Tensorflow.</p>\n\n<p><img src=\"assets/img/style.gif\" alt=\"Style\" class=\"size-small\" /></p>\n\n<p>The task here is to take <strong>Mona Lisa</strong> and add the texture of a famous Japanese painting - <strong>The Great Wave off Kanagawa</strong> on top of it. In other words, take the content from Mona Lisa and the style from The Wave and combine them.</p>\n\n<p>I used a pretrained <a href=\"http://www.robots.ox.ac.uk/~vgg/research/very_deep/\">VGG19</a> network trained on the ImageNet dataset.</p>\n\n<p>The main part of this project is the loss functions. We have 2 loss functions here: <em>content loss</em> (difference between the output and Mona Lisa) and <em>style loss</em> (difference between the output and The Wave)</p>\n\n<p>I used a deep learning cloud service called <a href=\"https://www.floydhub.com/\">Floyd</a> to train it. Check them out, they give 100 hrs GPU usage for free on signup.</p>\n\n<p>Feel free to check it out <em><a href=\"https://github.com/sdhnshu/artistic-style-transfer-on-floydhub\">github</a></em></p>\n\n<p><em>PS. It was appriciated by the founder of Floyd on <a href=\"https://twitter.com/FloydHub_/status/857688492574334976\">twitter</a></em></p>",
+      "excerpt": "Here I have implemented the first style transfer paper that came out in 2015 by Gatys et al. in Tensorflow.",
+      "languages": null,
+      "categories": [],
+      "tags": ["deep"]
+    }
+    
+  
+
+  
+    ,
+    {
+      "title": "What exactly is deep learning and why should we be hyped?",
+      "permalink": "http://sdhnshu.com/deep-hype.html",
+      "link": "http://sdhnshu.com/deep-hype.html",
+      "date": "2017-03-19T00:00:00+05:30",
+      
+      "author": {
+        "name": "Sudhanshu Passi",
+        "url": "http://sdhnshu.com/",
+        "email": "sudhanshupassi@gmail.com"
+      },
+      "content": "<p>Like most of you reading this article, I am a newbie to deep learning too. With a basic computer science degree, I entered this arena after I saw so much excitement among the people in this community. And once I knew what it was, I got hooked too.</p>\n\n<p>After Google open-sourced their machine learning library <a href=\"https://www.youtube.com/watch?v=oZikw5k_2FM\">Tensorflow</a>, there has been a lot of talk about ‘deep learning’ and for those who are <em>not</em> from a technical background, you may wonder what exactly all the hype is about. So without further ado, let’s get into it.</p>\n\n<p>Deep learning is a <em>computer algorithm</em> inspired by the structure of our brains, and neurologists think there’s something similar but a lot more complicated in our brains that help us humans do so complicated things.</p>\n\n<hr />\n\n<h1 id=\"a-brief-history\">A brief history</h1>\n\n<p>The algorithms for neural networks were <a href=\"https://www.google.co.in/search?q=Frank+Rosenblatt\">invented in the 60’s</a>, but it’s only now that we have enough computation power to carry it out on a large-scale. And our brain has around 1 billion neurons, so we still need a lot of computating power to reach that stage.</p>\n\n<p>Some important people who have worked in this field are <a href=\"https://www.google.co.in/search?q=Geoffrey+Hinton\">Geoffrey Hinton</a>, <a href=\"https://www.quora.com/profile/Yoshua-Bengio\">Yoshua Bengio</a>, <a href=\"https://medium.com/@karpathy\">Andrej Karpathy</a>, <a href=\"https://www.google.co.in/search?q=Yann+Le+Cunn\">Yann Le Cunn</a>, <a href=\"http://www.andrewng.org/\">Andrew Ng</a>, <a href=\"https://www.google.co.in/search?q=sebastian+thrun\">Sebastian Thrun</a>, <a href=\"https://www.quora.com/profile/Ian-Goodfellow#\">Ian Goodfellow</a>. Be sure to check them out if interested.</p>\n\n<hr />\n\n<h1 id=\"so-how-does-it-work\">So how does it work?</h1>\n\n<p>Traditional programming algorithms make us specify every case that can fall upon it. It breaks if an unspecified case occurs. The deep learning algorithm, however, looks at a lot of inputs and their corresponding outputs and tries to learn a pattern between them. Thus, after this <em>training</em> it will be able to predict an output when an unknown input is given. A fun visualization is <a href=\"http://playground.tensorflow.org/\">here</a>.</p>\n\n<p>Underneath, there’s a lot of <a href=\"https://www.youtube.com/watch?v=bxe2T-V8XRs&amp;list=PLiaHhY2iBX9hdHaRr6b7XevZtgZRa1PoU\">matrix multiplications, calculus and statistics.</a> Deep learning is actually an intersection of computer science, data science, neuroscience, and math. We write code that learns by itself and doesn’t need all cases specifically written.</p>\n\n<hr />\n\n<h1 id=\"so-does-it-have-neurons-like-our-brains-have\">So does it have neurons like our brains have?</h1>\n\n<p>Yes they do!</p>\n\n<p><img src=\"assets/img/perceptron.jpg\" alt=\"Perceptron\" class=\"size-small\" /></p>\n\n<p>Each circle in this picture is a neuron and there are connections between them. The yellows are inputs and orange is output. Depending on the signal strength of the inputs, the output is decided.</p>\n\n<p>Stack some of them together and you get neural networks that can do different things:</p>\n\n<p><img src=\"assets/img/dff.jpg\" alt=\"Feed forward\" />\n<img src=\"assets/img/rnn.jpg\" alt=\"RNNs\" />\n<img src=\"assets/img/cnn.jpg\" alt=\"CNNs\" />\n<img src=\"assets/img/gan.jpg\" alt=\"GANs\" /></p>\n\n<p><em>Picture credits: Fjodor van Veen — asimovinstitute.org</em></p>\n\n<hr />\n\n<h1 id=\"who-should-be-hyped\">Who should be hyped?</h1>\n\n<p>Everyone. Artificial neural networks have broken all records in image recognition and excels in a lot of other fields. Let me give you some examples:</p>\n\n<blockquote>\n  <p>A recurrent neural network defeated the world champion for the 5th time in the hardest game in the world, <a href=\"https://www.youtube.com/watch?v=TnUYcTuZJpM&amp;feature=youtu.be&amp;t=28s\">Go</a>, in March 2016</p>\n</blockquote>\n\n<blockquote>\n  <p>Nvidia, Tesla and Google are using convolutional networks for their <a href=\"https://www.youtube.com/watch?v=qhUvQiKec2U\">self driving cars</a></p>\n</blockquote>\n\n<blockquote>\n  <p>Google, Netflix, Amazon, and Facebook use neural networks for recommending what movie or product you would like, or whom you would like</p>\n</blockquote>\n\n<blockquote>\n  <p>Banks use neural networks for <a href=\"https://youtu.be/vOppzHpvTiQ?t=1m33s\">fraud detection</a></p>\n</blockquote>\n\n<blockquote>\n  <p>It is the state of the art in voice to text conversion, handwriting recognition and natural language processing</p>\n</blockquote>\n\n<blockquote>\n  <p>Art generation app <a href=\"http://prisma-ai.com/\">Prisma</a> uses convolutional neural networks</p>\n</blockquote>\n\n<blockquote>\n  <p>Researchers are using it for <a href=\"https://youtu.be/BmkA1ZsG2P4?t=6m39s\">drug discovery</a> and for <a href=\"https://www.youtube.com/watch?v=iOWamCtnwTc\">simulating physics</a></p>\n</blockquote>\n\n<p>According to the godfather of deep learning, <a href=\"https://www.youtube.com/watch?v=XG-dwZMc7Ng\">Geoffrey Hinton</a>, deep learning is going to disrupt a lot of fields in the coming 5 yrs and we can already see it.</p>\n\n<hr />\n\n<h1 id=\"theres-also-another-perspective-to-it\">There’s also another perspective to it</h1>\n\n<p>Some people may feel this is not a good thing as this may put us in a situation where machines might overpower us, but a lot of it is very far away and that’s why organizations like <a href=\"https://www.youtube.com/watch?v=AbcRlDBnwjM\">OpenAI, funded by Elon Musk</a> were found that aim to democratize artificial intelligence.</p>\n\n<p>It’s true that artificial intelligence will soon replace our menial jobs and it can’t be stopped. We won’t be driving our vehicles in some years, perhaps we might be able to solve the energy crisis using artificial neural networks.</p>\n\n<p>In the end, a knife can be used for good as well as for bad. Think before you do something, because the possibilities with a synthetic brain are endless. We have again reached a moment in history where we transcend ourselves and take humanity forward. It’s our responsibility to use it wisely.</p>",
+      "excerpt": "Explaining the importance of deep learning",
+      "languages": null,
+      "categories": [],
+      "tags": ["blog-post"]
+    }
+    
+  
+
+  
+    ,
+    {
+      "title": "Image classifier",
+      "permalink": "http://sdhnshu.com/tf-img-classifier.html",
+      "link": "http://sdhnshu.com/tf-img-classifier.html",
+      "date": "2017-03-05T00:00:00+05:30",
+      
+      "author": {
+        "name": "Sudhanshu Passi",
+        "url": "http://sdhnshu.com/",
+        "email": "sudhanshupassi@gmail.com"
+      },
+      "content": "<p>This was my second project in Udacity’s Deep Learning Nanodegree Foundation course where we took the <em><a href=\"https://www.cs.toronto.edu/~kriz/cifar.html\">CIFAR 10 database</a></em>, a classic image classification dataset and trained a basic <strong>Convolutional Neural Network</strong> to classify between the 10 categories specified:</p>\n<ul>\n  <li>airplane</li>\n  <li>automobile</li>\n  <li>bird</li>\n  <li>cat</li>\n  <li>deer</li>\n  <li>dog</li>\n  <li>frog</li>\n  <li>horse</li>\n  <li>ship</li>\n  <li>truck</li>\n</ul>\n\n<p>This project was implemented in Tensorflow and no advanced concepts were used, thus we were able to get only around 60% accuracy.</p>\n\n<p>Feel free to check it out <em><a href=\"https://github.com/sdhnshu/image-classification\">github</a></em></p>",
+      "excerpt": "This was my second project in Udacity’s Deep Learning Nanodegree Foundation course where we took the CIFAR 10 database, a classic image classification dataset and trained a basic Convolutional Neural Network to classify between the 10 categories specified:\n\n  airplane\n  automobile\n  bird\n  cat\n  deer\n  dog\n  frog\n  horse\n  ship\n  truck",
+      "languages": null,
+      "categories": [],
+      "tags": ["deep"]
+    }
+    
+  
+
+  
+    ,
+    {
+      "title": "Feedforward neural net",
+      "permalink": "http://sdhnshu.com/tf-bike-rental.html",
+      "link": "http://sdhnshu.com/tf-bike-rental.html",
+      "date": "2017-02-08T00:00:00+05:30",
+      
+      "author": {
+        "name": "Sudhanshu Passi",
+        "url": "http://sdhnshu.com/",
+        "email": "sudhanshupassi@gmail.com"
+      },
+      "content": "<p>This was my first project in Udacity’s Deep Learning Nanodegree Foundation course where a bunch of datapoints are given like:</p>\n<ul>\n  <li>Day</li>\n  <li>Date</li>\n  <li>Wind speed</li>\n  <li>Humidity and some others</li>\n</ul>\n\n<p>These were taken as the features</p>\n\n<p>And the label was the number of people who rented the bicycles in that hour in those conditions. The network would be trained to predict this number based on the features given.</p>\n\n<p><img src=\"assets/img/bike-dataset.png\" alt=\"BikeDataset\" class=\"size-small\" /></p>\n\n<p><em>The first fifteen columns are features and the last one(cnt) is the label</em></p>\n\n<p>After implementing a very basic <strong>feedfowrard network</strong> in Tensorflow and training it on these datapoints an accuracy of 80% was achieved.</p>\n\n<p>The dataset file is included in the repo and a detailed jupyter notebook letting you through the project. It has a nice graph plotted to show the losses.</p>\n\n<p>Feel free to check it out <em><a href=\"https://github.com/sdhnshu/bike-rental\">github</a></em></p>",
+      "excerpt": "This was my first project in Udacity’s Deep Learning Nanodegree Foundation course where a bunch of datapoints are given like:\n\n  Day\n  Date\n  Wind speed\n  Humidity and some others",
+      "languages": null,
+      "categories": [],
+      "tags": ["deep"]
+    }
+    
+  
+
+  
+    ,
+    {
+      "title": "Poster Design",
+      "permalink": "http://sdhnshu.com/poster.html",
+      "link": "http://sdhnshu.com/poster.html",
+      "date": "2016-08-24T00:00:00+05:30",
+      
+      "author": {
+        "name": "Sudhanshu Passi",
+        "url": "http://sdhnshu.com/",
+        "email": "sudhanshupassi@gmail.com"
+      },
+      "content": "<p><img src=\"assets/img/poster.jpg\" alt=\"Poster\" />\n<em>Appreciate the project on <a href=\"https://www.behance.net/gallery/42025197/Event-Poster\">Behance</a></em></p>",
+      "excerpt": "Appreciate the project on Behance",
+      "languages": null,
+      "categories": [],
+      "tags": ["design"]
+    }
+    
+  
+
+  
+    ,
+    {
+      "title": "Steve Jobs",
+      "permalink": "http://sdhnshu.com/jobs.html",
+      "link": "http://sdhnshu.com/jobs.html",
+      "date": "2016-08-24T00:00:00+05:30",
+      
+      "author": {
+        "name": "Sudhanshu Passi",
+        "url": "http://sdhnshu.com/",
+        "email": "sudhanshupassi@gmail.com"
+      },
+      "content": "<p><img src=\"assets/img/jobs.jpg\" alt=\"Jobs\" />\n<em>Appreciate the project on <a href=\"https://www.behance.net/gallery/42024837/Steve-Jobs\">Behance</a></em></p>",
+      "excerpt": "Appreciate the project on Behance",
+      "languages": null,
+      "categories": [],
+      "tags": ["design"]
+    }
+    
+  
+
+  
+    ,
+    {
+      "title": "Beats",
+      "permalink": "http://sdhnshu.com/beats.html",
+      "link": "http://sdhnshu.com/beats.html",
+      "date": "2016-08-24T00:00:00+05:30",
+      
+      "author": {
+        "name": "Sudhanshu Passi",
+        "url": "http://sdhnshu.com/",
+        "email": "sudhanshupassi@gmail.com"
+      },
+      "content": "<p><img src=\"assets/img/beats.jpg\" alt=\"Beats\" class=\"size-small\" />\n<em>Appreciate the project on <a href=\"https://www.behance.net/gallery/42024705/Beats\">Behance</a></em></p>",
+      "excerpt": "Appreciate the project on Behance",
+      "languages": null,
+      "categories": [],
+      "tags": ["design"]
+    }
+    
+  
+
+
+]

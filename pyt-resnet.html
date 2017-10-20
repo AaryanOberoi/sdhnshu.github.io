@@ -1,0 +1,863 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!doctype html>
+
+
+  <meta charset="utf-8">
+
+
+<title>ResNet in PyTorch - Sudhanshu Passi</title>
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<!-- Define a description for better SEO result -->
+<meta name="description" content="This is the first of the collection of deep learning models I am building in PyTorch. Its the ResNet 2015 by Microsoft (arxiv link). The new concept of Residuals was introduced with ResNet. It helps training very deep networks train...">
+
+<!-- Cheome Web App theme color -->
+<meta name="theme-color" content="#8A171A">
+
+<!-- Feed URL -->
+<link rel="alternate" href="/feed.xml" type="application/atom+xml">
+
+<!-- Site icons -->
+
+  
+    
+
+    
+
+    
+
+    
+  
+    
+
+    
+
+    
+
+    
+  
+    
+
+    
+
+    
+
+    
+  
+    
+
+    
+
+    
+
+    
+  
+    
+
+    
+
+    
+
+    
+  
+    
+
+    
+
+    
+
+    
+  
+    
+
+    
+
+    
+
+    
+  
+    
+
+    
+
+    
+
+    
+  
+    
+
+    
+
+    
+
+    
+  
+    
+
+    
+
+    
+
+    
+  
+    
+
+    
+
+    
+
+    
+  
+    
+
+    
+
+    
+
+    
+  
+    
+
+    
+
+    
+
+    
+  
+    
+
+    
+
+    
+
+    
+  
+    
+
+    
+
+    
+
+    
+  
+    
+
+    
+
+    
+
+    
+  
+    
+
+    
+
+    
+
+    
+  
+    
+
+    
+
+    
+
+    
+  
+    
+
+    
+
+    
+
+    
+  
+    
+
+    
+
+    
+
+    
+  
+    
+
+    
+
+    
+
+    
+  
+    
+
+    
+
+    
+
+    
+  
+    
+
+    
+
+    
+
+    
+  
+    
+
+    
+
+    
+
+    
+  
+
+
+<!-- Chrome Web App manifest -->
+<link rel="manifest" href="/manifest.json">
+
+<!-- Main CSS -->
+<link rel="stylesheet" href="/assets/themes/curtana/css/app.css?assets-inline">
+
+<!-- Canonical links, avoid duplicate content problems -->
+<link rel="canonical" href="http://sdhnshu.com/pyt-resnet.html">
+
+<!-- DNS prefetching for static files -->
+
+
+<!-- browser-sync, don't remove this -->
+<!-- BS_INSERT -->
+
+<!-- Head hooks -->
+
+
+<!-- Open Graph and Twitter Cards support, more info: https://dev.twitter.com/docs/cards -->
+<meta property="og:type" content="article">
+<meta property="og:site_name" content="Sudhanshu Passi">
+<meta property="og:title" content="ResNet in PyTorch">
+<meta property="og:url" content="http://sdhnshu.com/pyt-resnet.html">
+<meta property="og:description" content="This is the first of the collection of deep learning models I am building in PyTorch. Its the ResNet 2015 by Microsoft (arxiv link). The new concept of Residuals was introduced with ResNet. It helps training very deep networks train...">
+<meta property="og:image" content="http://sdhnshu.com/logo.png">
+
+<meta name="twitter:card" content="summary_large_image">
+
+
+  <meta name="twitter:site" content="@Sudhanshupassi">
+
+
+
+  <meta name="twitter:creator" content="@Sudhanshupassi">
+
+
+
+  <meta property="article:published_time" content="2017-08-20T00:00:00+05:30">
+  <meta property="article:modified_time" content="">
+  <meta name="twitter:label1" value="Words">
+  <meta name="twitter:data1" value="156 words">
+  <meta name="twitter:label2" value="Reading time">
+  <meta name="twitter:data2" value="Less than 1 min">
+
+
+<!-- Post specified styles -->
+<style data-assets-inline>
+  /*
+    TODO: You have to speicify background color for `html` in order to make `-webkit-filter` work
+    Link: https://bugs.chromium.org/p/chromium/issues/detail?id=591015
+    Date: Mar 1, 2016, 5:41 PM
+  */
+  html {
+    
+    background-color: #8A171A;
+    
+  }
+
+  body {
+    
+    color: #dddddd;
+    
+
+    
+    background-color: #8A171A;
+    
+
+    
+  }
+
+  
+  a,
+  button {
+    color: #dddddd;
+  }
+  
+
+  
+  ::selection {
+    color: #f92a2f;
+  }
+  
+
+  
+  .navigation li a:hover,
+  .navigation li a:focus {
+    color: #f92a2f;
+  }
+  
+
+  
+  
+    
+
+  
+  .current a {
+    color: #f92a2f;
+  }
+
+  .content a {
+    color: #f92a2f;
+  }
+  
+
+  
+  .content code,
+  .content pre {
+    color: #f92a2f;
+  }
+  
+
+  /*
+    TODO: Need a better solution. I have to redefine the whole box-shadow here because no invidual box-shadow-color exists
+    Date: Mar 12, 2016, 12:09 AM
+  */
+  
+  .content hr::before,
+  .footnotes::before {
+    background: #dddddd;
+    box-shadow: 24px 0 0 0 #dddddd, -24px 0 0 0 #dddddd;
+  }
+  
+
+  
+  .note,
+  .store,
+  .download {
+    border-left-color: #f92a2f;
+  }
+  
+
+  
+  .external .dot {
+    background: #f92a2f;
+  }
+  
+
+  
+  :target [rev=footnote],
+  :target [rel=footnote],
+  :target .reversefootnote,
+  :target .footnote {
+    color: #f92a2f;
+  }
+  
+</style>
+
+<!-- Main navigation with current page / categoriy highlighted -->
+<nav class="navigation">
+  <ul>
+    
+      
+
+
+
+
+
+
+
+
+      
+      
+      <li >
+        <a href="/">
+          
+            HOME
+          
+        </a>
+      </li>
+    
+      
+
+
+
+
+
+
+
+
+      
+      
+      <li >
+        <a href="/work/">
+          
+            work
+          
+        </a>
+      </li>
+    
+      
+
+
+
+
+
+
+
+
+      
+      
+      <li >
+        <a href="/blog/">
+          
+            Blog
+          
+        </a>
+      </li>
+    
+      
+
+
+
+
+
+
+
+
+      
+      
+      <li >
+        <a href="/about/">
+          
+            About
+          
+        </a>
+      </li>
+    
+  </ul>
+</nav>
+
+<!-- Main content wrap -->
+<main class="content " role=main>
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- Post-wide custom CSS -->
+
+  
+
+
+<!-- Article wrapper, limit width -->
+<article 
+  
+>
+
+  <!-- Post title -->
+  <header 
+  style="     "
+>
+
+    <h1 class="
+  
+" title="ResNet in PyTorch" data-title="ResNet in PyTorch">
+      
+  
+    
+  
+    ResNet in PyTorch<span class="dot dot--post"> </span>
+  
+
+  
+
+    </h1>
+
+    
+      <small>
+        By <span rel="author">Sudhanshu Passi</span>
+        on <time datetime="2017-08-20T00:00:00+05:30">Aug 20, 2017</time>
+      </small>
+    
+
+    
+
+  </header>
+
+  <!-- Post content -->
+  <div class="post-content">
+    <p>This is the first of the collection of deep learning models I am building in PyTorch. Its the ResNet 2015 by Microsoft <a href="https://arxiv.org/pdf/1512.03385.pdf">(arxiv link).</a></p>
+
+<p>The new concept of <strong>Residuals</strong> was introduced with ResNet. It helps training very deep networks train faster. The paper proposed by Microsoft had 33 convolution layers and is able to train in the same amount of time as a normal network with a greater accuracy than a normal network. It won the ImageNet 2015 image classification challenge.</p>
+
+<p>The Structure of a Residual block is:</p>
+<div class="highlighter-rouge"><pre class="highlight"><code>Conv with batch norm
+Relu
+Conv with batch norm
+Downsample if present
+Resisual
+Relu
+</code></pre>
+</div>
+
+<p>The ResNet structure implemented in this project is:</p>
+<div class="highlighter-rouge"><pre class="highlight"><code>Conv with batch norm
+Relu
+
+Residual Block
+Residual Block
+
+Residual Block with downsampling
+Residual Block
+Residual Block 
+
+Residual Block with downsampling
+Residual Block
+Residual Block 
+
+Avg pool
+Fully connected
+</code></pre>
+</div>
+
+<p>Feel free to check it out <em><a href="https://github.com/sdhnshu/pytorch-model-zoo/tree/master/resnet">github</a></em></p>
+
+
+    
+    
+
+    
+  </div>
+
+</article>
+
+
+</main>
+
+<!-- Footer section -->
+
+  <footer class="footer">
+    <ul>
+      <li><a href="https://github.com/sdhnshu">Github</a></li>
+      <li><a href="https://www.behance.net/sdhnshu">Behance</a></li>
+      <li><a href="https://www.linkedin.com/in/sdhnshu/">LinkedIn</a></li>
+      
+      
+
+      <!-- 
+        <li><a href="/email-signup/" title="Subscribe">Email</a></li>
+       -->
+
+      <li><a href="/feed.xml" title="Feed (The Atom Syndication Format)">Atom</a></li>
+    </ul>
+  </footer>
+
+
+<!-- Theme scripts -->
+<script src="/assets/themes/curtana/js/app.js?assets-inline"></script>
+
+<!-- User scripts -->
+<script src="/assets/js/user.js?assets-inline"></script>
+
+<!-- Lightense Images -->
+
+  <script src="/assets/themes/curtana/js/lightense.min.js?assets-inline"></script>
+  <script>
+    window.addEventListener('load', function () {
+      Lightense('p > img:not(.no-lightense),.lightense');
+    }, false);
+  </script>
+
+
+<!-- Service Worker  -->
+
+  
+
+
+<!-- Google Analytics -->
+
+  
+    <script>
+      (function(a,m,s,f,j,k,l){a['GoogleAnalyticsObject']=j;a[j]=a[j]||function(){
+      (a[j].q=a[j].q||[]).push(arguments)},a[j].l=1*new Date();k=m.createElement(s),
+      l=m.getElementsByTagName(s)[0];k.async=1;k.src=f;l.parentNode.insertBefore(k,l)
+      })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+      ga('create', 'UA-83000432-2', 'auto');
+      ga('send', 'pageview');
+    </script>
+  
+
+
+<!-- Foot hooks -->
+
+
+

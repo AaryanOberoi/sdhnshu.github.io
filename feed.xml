@@ -1,4 +1,655 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom"><title>Sudhanshu Passi</title><subtitle>Designer | Deep learning engineer</subtitle><updated>2017-09-13T23:55:45+05:30</updated><id>http://sdhnshu.com/</id><generator uri="https://sparanoid.com/lab/amsf/" version="1.1.8">Almace Scaffolding</generator><link rel="alternate" type="text/html" hreflang="en" href="http://sdhnshu.com/" /><link rel="self" type="application/atom+xml" href="http://sdhnshu.com/feed.xml" /><author><name>Sudhanshu Passi</name><uri>http://sdhnshu.com/</uri><email>sudhanshupassi@gmail.com</email></author><entry><title>What exactly is deep learning and why should we be hyped?</title><id>http://sdhnshu.com/deep-hype.html</id><link rel="alternate" type="text/html" href="http://sdhnshu.com/deep-hype.html" /><published>2017-03-19T00:00:00+05:30</published><updated>2017-09-10T21:18:56+05:30</updated><author><name>Sudhanshu Passi</name><uri>http://sdhnshu.com/</uri><email>sudhanshupassi@gmail.com</email></author><content type="html" xml:base="http://sdhnshu.com/">
+<?xml version="1.0" encoding="utf-8"?>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>Sudhanshu Passi</title>
+  <subtitle>Designer | Deep learning engineer</subtitle>
+  <updated>2017-10-20T21:12:07+05:30</updated>
+  <id>http://sdhnshu.com/</id>
+  <generator uri="https://sparanoid.com/lab/amsf/" version="1.1.8">Almace Scaffolding</generator>
+
+  <link rel="alternate" type="text/html" hreflang="en" href="http://sdhnshu.com/" />
+  <link rel="self" type="application/atom+xml" href="http://sdhnshu.com/feed.xml" />
+
+  <author>
+    <name>Sudhanshu Passi</name>
+    <uri>http://sdhnshu.com/</uri>
+    <email>sudhanshupassi@gmail.com</email>
+  </author>
+
+  
+    
+      
+
+      
+
+      <entry>
+        <title>How do I get into this? Where do I start?</title>
+        <id>http://sdhnshu.com/my-journey.html</id>
+        <link rel="alternate" type="text/html" href="http://sdhnshu.com/my-journey.html" />
+        <published>2017-10-06T00:00:00+05:30</published>
+
+        
+          <updated>2017-10-06T00:00:00+05:30</updated>
+        
+
+        <author>
+          <name>Sudhanshu Passi</name>
+          <uri>http://sdhnshu.com/</uri>
+          <email>sudhanshupassi@gmail.com</email>
+        </author>
+
+        <content type="html" xml:base="http://sdhnshu.com/">
+          
+            &lt;p&gt;I got interested in deep learning almost a year ago in December 2016. I was searching for something cool for my final year project. This was &lt;em&gt;the&lt;/em&gt; thing at that time.&lt;/p&gt;
+
+&lt;p&gt;So I started searching for ways to learn as I knew absolutely nothing about ML or Python. The one thing that I found, recommended everywhere was the &lt;a href=&quot;https://www.coursera.org/learn/machine-learning&quot;&gt;Andrew Ng’s 2008 Coursera course&lt;/a&gt;. He’s the founder of Coursera and this was the first course that he put on Coursera (in 2008!!). So I did that course. It has all the basic Math necessary for Machine Learning and is really really important if you wanna know what is going underneath the ML libraries. &lt;em&gt;Highly recommended&lt;/em&gt;.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;assets/img/ng-coursera.png&quot; alt=&quot;Andrew Ng Coursera&quot; class=&quot;size-small&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Then I did the &lt;a href=&quot;https://in.udacity.com/course/intro-to-machine-learning--ud120&quot;&gt;Intro to ML course&lt;/a&gt; by the founder of Udacity, ex-VP of Google: Sebastian Thrun. There you’ll get familiar with Python and a basic ML library: scikit learn. It’s a new age course where they teach you how to get around python libraries (which is a vast corpus). I found it really helpful as it got me straight into python with ML.&lt;/p&gt;
+
+&lt;p&gt;In the meantime, I was also watching &lt;a href=&quot;https://www.youtube.com/channel/UCWN3xxRkmTPmbKwht9FuE5A&quot;&gt;Siraj Raval’s videos&lt;/a&gt; (I was one of his 20k subscribers) which went straight over my head btw. (That guy is more hype, less knowledge). You don’t get much to learn from him but can get the idea of the scope of the deep learning scene.&lt;/p&gt;
+
+&lt;p&gt;While I finished all these things, Siraj mentioned in one of his videos that he was planning a &lt;em&gt;Nanodegree&lt;/em&gt;. After a couple of days, I saw a new nano degree on Udacity called “Deep Learning Nanodegree Foundation”. I took it immediately. It was 20k Rupees at that time. I did not regret paying that much at that time. But by the time you are reading this, there might be several other deep learning courses on the internet. At the time of this writing, I really like the &lt;a href=&quot;http://course.fast.ai/&quot;&gt;Fast.ai course&lt;/a&gt;. It takes you through the practicality of it.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;assets/img/fastai.png&quot; alt=&quot;Fast.ai&quot; class=&quot;size-small&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Also, one really important youtube courses that helped me a lot was &lt;a href=&quot;https://www.youtube.com/watch?v=NfnWJUyUJYU&amp;amp;list=PLkt2uSq6rBVctENoVBg1TpCC7OQi31AlC&quot;&gt;Andrej Karpathy’s CS231n Winter 2016&lt;/a&gt;. He’s one of the pioneers in deep learning. He was a Ph.D. student at Stanford. He has also been the head of Open AI, backed by Elon Musk, and has now moved to Tesla as the self-driving head. A really great guy. His blog is really helpful. Check it out at &lt;a href=&quot;https://karpathy.github.io/&quot;&gt;this link&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;assets/img/karpathy-blog.png&quot; alt=&quot;Karpathy blog&quot; class=&quot;size-small&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;One more thing that helped me a lot (and is still helping me a lot) is following these people on Twitter. You can get really great information from these pioneers from their twitter accounts. The people I follow on twitter are:&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;Andrej Karpathy&lt;/li&gt;
+  &lt;li&gt;Yann LeCun (Founder of CNNs)&lt;/li&gt;
+  &lt;li&gt;Fe Fe Li (Andrej’s mentor)&lt;/li&gt;
+  &lt;li&gt;Sebastian Thrun&lt;/li&gt;
+  &lt;li&gt;Andrew Ng&lt;/li&gt;
+  &lt;li&gt;Soumith Chintala (Head of FAIR, PyTorch)&lt;/li&gt;
+  &lt;li&gt;Ian Goodfellow (Founder of GANs)&lt;/li&gt;
+  &lt;li&gt;Elon Musk (coz he’s awesome)&lt;/li&gt;
+  &lt;li&gt;Demmis Hassabis (Founder of DeepMind, now a part of Google)&lt;/li&gt;
+  &lt;li&gt;Google Research&lt;/li&gt;
+  &lt;li&gt;Deep Mind&lt;/li&gt;
+  &lt;li&gt;Open AI&lt;/li&gt;
+  &lt;li&gt;Baidu Research&lt;/li&gt;
+  &lt;li&gt;Facebook Artificial Intelligence and Reseach&lt;/li&gt;
+  &lt;li&gt;Tensorflow&lt;/li&gt;
+  &lt;li&gt;PyTorch&lt;/li&gt;
+  &lt;li&gt;Distill publication (The best publication on deep learning)&lt;/li&gt;
+  &lt;li&gt;Geoffrey Hinton (if he were there I would follow him)&lt;/li&gt;
+  &lt;li&gt;Yoshua Bengio (if he were there I would follow him)&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;One more place that you can get the first-hand knowledge about what’s happening in the community is the Reddit channel: &lt;a href=&quot;https://www.reddit.com/r/MachineLearning/&quot;&gt;/r/MachineLearning&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;assets/img/reddit-ml.png&quot; alt=&quot;Reddit ML&quot; class=&quot;size-small&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;If you don’t use twitter or Reddit but use slack, you can use my &lt;a href=&quot;https://join.slack.com/t/sdhnshu/shared_invite/enQtMjU0NjM3OTY1NTA1LTMwM2E4NTBjZGRjYjNjMDhkZmY4MzZjOGRkOWNlMmRjZGNkZjIxMzcyOGUxZDkwYjgzNjUyYTg2YTZjZTczYjQ&quot;&gt;slack group: sdhnshu.slack.com&lt;/a&gt;. I have channels where you get news from all these guys via twitter and also the most important news from the hot section of /r/MachineLearning. It’s a place to be for all the ML news. I personally use it and you can use it too for all the news in a single place.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;assets/img/slack.png&quot; alt=&quot;My slack&quot; class=&quot;size-small&quot; /&gt;&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;p&gt;Since then, I’ve been able to implement my own things by reading their papers on &lt;a href=&quot;https://arxiv.org/&quot;&gt;arxiv.org&lt;/a&gt;. Also to keep track of all the papers coming in day by day you can use Andrej’s tool: &lt;a href=&quot;http://arxiv-sanity.com/&quot;&gt;Arxiv Sanity Preserver&lt;/a&gt;. It uses ML to sort papers and recommends you relevant papers. Amazing work Andrej.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;assets/img/arxiv-sanity.png&quot; alt=&quot;Arxiv sanity&quot; class=&quot;size-small&quot; /&gt;&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;p&gt;Hope my journey inspires you to get into deep learning as the more the people are into it, the better.&lt;/p&gt;
+
+          
+          
+        
+      
+        </content>
+
+        
+          <summary>My journey since last December</summary>
+        
+      </entry>
+    
+  
+    
+      
+
+      
+
+      <entry>
+        <title>Image captioning in PyTorch</title>
+        <id>http://sdhnshu.com/pyt-img-captioning.html</id>
+        <link rel="alternate" type="text/html" href="http://sdhnshu.com/pyt-img-captioning.html" />
+        <published>2017-09-03T00:00:00+05:30</published>
+
+        
+          <updated>2017-09-03T00:00:00+05:30</updated>
+        
+
+        <author>
+          <name>Sudhanshu Passi</name>
+          <uri>http://sdhnshu.com/</uri>
+          <email>sudhanshupassi@gmail.com</email>
+        </author>
+
+        <content type="html" xml:base="http://sdhnshu.com/">
+          
+            &lt;p&gt;Feel free to check it out &lt;em&gt;&lt;a href=&quot;https://github.com/sdhnshu/pytorch-model-zoo/tree/coco-captions/img%20captioning&quot;&gt;github&lt;/a&gt;&lt;/em&gt;&lt;/p&gt;
+
+          
+          
+        
+      
+        </content>
+
+        
+          <summary>Feel free to check it out github</summary>
+        
+      </entry>
+    
+  
+    
+      
+
+      
+
+      <entry>
+        <title>Style transfer in PyTorch</title>
+        <id>http://sdhnshu.com/pyt-style-transfer.html</id>
+        <link rel="alternate" type="text/html" href="http://sdhnshu.com/pyt-style-transfer.html" />
+        <published>2017-09-01T00:00:00+05:30</published>
+
+        
+          <updated>2017-09-01T00:00:00+05:30</updated>
+        
+
+        <author>
+          <name>Sudhanshu Passi</name>
+          <uri>http://sdhnshu.com/</uri>
+          <email>sudhanshupassi@gmail.com</email>
+        </author>
+
+        <content type="html" xml:base="http://sdhnshu.com/">
+          
+            &lt;p&gt;A VGG19 model, readily provided by the PyTorch was used for this project. The output from its 0, 5, 10, 19 and 28 layers was used as the style and content components.&lt;/p&gt;
+
+&lt;p&gt;Here is an example passed through the network:&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;assets/img/style-emma.jpg&quot; alt=&quot;emma&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Feel free to check it out &lt;em&gt;&lt;a href=&quot;https://github.com/sdhnshu/pytorch-model-zoo/tree/master/artistic%20style%20transfer&quot;&gt;github&lt;/a&gt;&lt;/em&gt;&lt;/p&gt;
+
+          
+          
+        
+      
+        </content>
+
+        
+          <summary>A VGG19 model, readily provided by the PyTorch was used for this project. The output from its 0, 5, 10, 19 and 28 layers was used as the style and content components.</summary>
+        
+      </entry>
+    
+  
+    
+      
+
+      
+
+      <entry>
+        <title>Deep Conv Generative Adverserial Net in Pytorch</title>
+        <id>http://sdhnshu.com/pyt-dcgan.html</id>
+        <link rel="alternate" type="text/html" href="http://sdhnshu.com/pyt-dcgan.html" />
+        <published>2017-08-25T00:00:00+05:30</published>
+
+        
+          <updated>2017-08-25T00:00:00+05:30</updated>
+        
+
+        <author>
+          <name>Sudhanshu Passi</name>
+          <uri>http://sdhnshu.com/</uri>
+          <email>sudhanshupassi@gmail.com</email>
+        </author>
+
+        <content type="html" xml:base="http://sdhnshu.com/">
+          
+            &lt;p&gt;GANs are one of the most interesting innovations in deep learning till date. Two networks competing to make each other better. But there is still a long way to go for GANs.&lt;/p&gt;
+
+&lt;p&gt;This is DCGAN. One of the countless Generative Adverserial networks. This &lt;a href=&quot;https://arxiv.org/pdf/1511.06434.pdf&quot;&gt;paper&lt;/a&gt; was published by one of the major contributors of PyTorch.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;assets/img/dcgan.jpg&quot; alt=&quot;DCGAN&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;The discriminator is feeded images from two sources: randomly sampled from &lt;em&gt;real images&lt;/em&gt;, and the images &lt;em&gt;generated from the generator&lt;/em&gt;. The generator learns to fake images that look similar to the real dataset and the discriminator learns to label which images are real. The optimum would be reached when the discriminator labels all images as real.&lt;/p&gt;
+
+&lt;p&gt;Then we take the generator and generate new images from it.&lt;/p&gt;
+
+&lt;p&gt;In this project I trained the network on a dataset of faces(&lt;a href=&quot;http://vis-www.cs.umass.edu/lfw/#deepfunnel-anchor&quot;&gt;LFW deepfunneled&lt;/a&gt;). Here are some samples that a the trained generator generated:&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;assets/img/sampled.png&quot; alt=&quot;sample&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Feel free to check it out &lt;em&gt;&lt;a href=&quot;https://github.com/sdhnshu/pytorch-model-zoo/tree/master/dcgan&quot;&gt;github&lt;/a&gt;&lt;/em&gt;&lt;/p&gt;
+
+          
+          
+        
+      
+        </content>
+
+        
+          <summary>GANs are one of the most interesting innovations in deep learning till date. Two networks competing to make each other better. But there is still a long way to go for GANs.</summary>
+        
+      </entry>
+    
+  
+    
+      
+
+      
+
+      <entry>
+        <title>ResNet in PyTorch</title>
+        <id>http://sdhnshu.com/pyt-resnet.html</id>
+        <link rel="alternate" type="text/html" href="http://sdhnshu.com/pyt-resnet.html" />
+        <published>2017-08-20T00:00:00+05:30</published>
+
+        
+          <updated>2017-08-20T00:00:00+05:30</updated>
+        
+
+        <author>
+          <name>Sudhanshu Passi</name>
+          <uri>http://sdhnshu.com/</uri>
+          <email>sudhanshupassi@gmail.com</email>
+        </author>
+
+        <content type="html" xml:base="http://sdhnshu.com/">
+          
+            &lt;p&gt;This is the first of the collection of deep learning models I am building in PyTorch. Its the ResNet 2015 by Microsoft &lt;a href=&quot;https://arxiv.org/pdf/1512.03385.pdf&quot;&gt;(arxiv link).&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;The new concept of &lt;strong&gt;Residuals&lt;/strong&gt; was introduced with ResNet. It helps training very deep networks train faster. The paper proposed by Microsoft had 33 convolution layers and is able to train in the same amount of time as a normal network with a greater accuracy than a normal network. It won the ImageNet 2015 image classification challenge.&lt;/p&gt;
+
+&lt;p&gt;The Structure of a Residual block is:&lt;/p&gt;
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;Conv with batch norm
+Relu
+Conv with batch norm
+Downsample if present
+Resisual
+Relu
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;p&gt;The ResNet structure implemented in this project is:&lt;/p&gt;
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;Conv with batch norm
+Relu
+
+Residual Block
+Residual Block
+
+Residual Block with downsampling
+Residual Block
+Residual Block 
+
+Residual Block with downsampling
+Residual Block
+Residual Block 
+
+Avg pool
+Fully connected
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;p&gt;Feel free to check it out &lt;em&gt;&lt;a href=&quot;https://github.com/sdhnshu/pytorch-model-zoo/tree/master/resnet&quot;&gt;github&lt;/a&gt;&lt;/em&gt;&lt;/p&gt;
+
+          
+          
+        
+      
+        </content>
+
+        
+          <summary>This is the first of the collection of deep learning models I am building in PyTorch. Its the ResNet 2015 by Microsoft (arxiv link).</summary>
+        
+      </entry>
+    
+  
+    
+      
+
+      
+
+      <entry>
+        <title>Language translator</title>
+        <id>http://sdhnshu.com/tf-language-translator.html</id>
+        <link rel="alternate" type="text/html" href="http://sdhnshu.com/tf-language-translator.html" />
+        <published>2017-06-27T00:00:00+05:30</published>
+
+        
+          <updated>2017-06-27T00:00:00+05:30</updated>
+        
+
+        <author>
+          <name>Sudhanshu Passi</name>
+          <uri>http://sdhnshu.com/</uri>
+          <email>sudhanshupassi@gmail.com</email>
+        </author>
+
+        <content type="html" xml:base="http://sdhnshu.com/">
+          
+            &lt;p&gt;This was the fourth project in the Deep learning course where we built a &lt;strong&gt;seq-to-seq&lt;/strong&gt; network in Tensorflow containing an LSTM encoder and an LSTM decoder.&lt;/p&gt;
+
+&lt;p&gt;A basic french to english dataset was provided and can be found in the repository. A trained checkpoint with an accuracy of 95% is also linked in the repo.&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;'he saw a old yellow truck.' --(trained network)-&amp;gt; 'il a vu un vieux camion jaune.'
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;p&gt;Feel free to check it out &lt;em&gt;&lt;a href=&quot;https://github.com/sdhnshu/seq-to-seq&quot;&gt;github&lt;/a&gt;&lt;/em&gt;&lt;/p&gt;
+
+          
+          
+        
+      
+        </content>
+
+        
+          <summary>This was the fourth project in the Deep learning course where we built a seq-to-seq network in Tensorflow containing an LSTM encoder and an LSTM decoder.</summary>
+        
+      </entry>
+    
+  
+    
+      
+
+      
+
+      <entry>
+        <title>Holmes bot</title>
+        <id>http://sdhnshu.com/tf-holmes-bot.html</id>
+        <link rel="alternate" type="text/html" href="http://sdhnshu.com/tf-holmes-bot.html" />
+        <published>2017-06-09T00:00:00+05:30</published>
+
+        
+          <updated>2017-06-09T00:00:00+05:30</updated>
+        
+
+        <author>
+          <name>Sudhanshu Passi</name>
+          <uri>http://sdhnshu.com/</uri>
+          <email>sudhanshupassi@gmail.com</email>
+        </author>
+
+        <content type="html" xml:base="http://sdhnshu.com/">
+          
+            &lt;p&gt;This project implements a minimal Recurrent Neural Network (LSTM) in Tensorflow. The network trains and samples on a character level, in this case from all the Sherlock Holmes novels.&lt;/p&gt;
+
+&lt;p&gt;Here is something it generated after training for 100 epochs:&lt;/p&gt;
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;Holmes showed them how we had no such an end of the stuck to my own
+country, and he could not hope with the concealed water who were
+distinguished at the time in the house. I was sitinally that they had
+seen a fair serven and there were nothing to think. I was the lumour
+of his professional country and were standing than to tell him.
+
+&quot;I wanted to see that the man that I was able to discover that a cas
+is that this secret as well. It is not so many than any of the
+matter and a considerable poor frankly. He is the subject which was
+closely.&quot;
+
+&quot;I take the morning. It is a supper which you have taken out in your
+fair first thing.&quot;
+
+&quot;What did you make of your house?&quot;
+
+&quot;I have no day?&quot;
+
+&quot;Yes, I can say, and we are never and his son.&quot;
+
+&quot;And you cannot assist that? Who is it?&quot;
+
+&quot;I am glad at our face. I would sure the more important than to the
+sound which I have not seen the corner which has been a converse of
+the most communication as to the sentence window out why we can. The old
+cruel to the professor was in my companions and a letter, but the
+tamb of the hall was one in the side of the door. A compellette as I
+saw, as you see, a dead man without a moment when the clumber of
+carriage stepped his constetce. The stairs were not taken about it
+with the string. Here he walked out of my professional, but when we at
+him as I had always seem to be a man, sir. He had not hit heed against the
+passages and had, so I had seen the pleasure of a sergeant that it was
+not once to be a lately and table for a muscular. Hunder they were
+sure of himself thickly was impendented in this man with him. He came
+to the door, and then to send all the room. It came to the clothes of
+the most, and which I had confessing that I have been claim in a
+delate. I was not far to see that he was always anything, so I would
+be supprised.&quot;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;p&gt;The checkpoints trained on a GTX 1080 for 100 epochs can be found &lt;a href=&quot;https://drive.google.com/file/d/0B24n6xHwJ0h0MXR3MXRRQUd2N3M/view?usp=sharing&quot;&gt;here&lt;/a&gt;. The loss in the end was 1.1275&lt;/p&gt;
+
+&lt;p&gt;You can train it on your own dataset by replacing the ‘holmes.txt’ with your own file and running train.py&lt;/p&gt;
+
+&lt;p&gt;Feel free to check it out &lt;em&gt;&lt;a href=&quot;https://github.com/sdhnshu/holmes-bot&quot;&gt;github&lt;/a&gt;&lt;/em&gt;&lt;/p&gt;
+
+          
+          
+        
+      
+        </content>
+
+        
+          <summary>This project implements a minimal Recurrent Neural Network (LSTM) in Tensorflow. The network trains and samples on a character level, in this case from all the Sherlock Holmes novels.</summary>
+        
+      </entry>
+    
+  
+    
+      
+
+      
+
+      <entry>
+        <title>Style transfer on FloydHub</title>
+        <id>http://sdhnshu.com/tf-style-transfer-floyd.html</id>
+        <link rel="alternate" type="text/html" href="http://sdhnshu.com/tf-style-transfer-floyd.html" />
+        <published>2017-04-21T00:00:00+05:30</published>
+
+        
+          <updated>2017-04-21T00:00:00+05:30</updated>
+        
+
+        <author>
+          <name>Sudhanshu Passi</name>
+          <uri>http://sdhnshu.com/</uri>
+          <email>sudhanshupassi@gmail.com</email>
+        </author>
+
+        <content type="html" xml:base="http://sdhnshu.com/">
+          
+            &lt;p&gt;Here I have implemented the first style transfer paper that came out in &lt;a href=&quot;https://arxiv.org/pdf/1508.06576.pdf&quot;&gt;2015 by Gatys et al.&lt;/a&gt; in Tensorflow.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;assets/img/style.gif&quot; alt=&quot;Style&quot; class=&quot;size-small&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;The task here is to take &lt;strong&gt;Mona Lisa&lt;/strong&gt; and add the texture of a famous Japanese painting - &lt;strong&gt;The Great Wave off Kanagawa&lt;/strong&gt; on top of it. In other words, take the content from Mona Lisa and the style from The Wave and combine them.&lt;/p&gt;
+
+&lt;p&gt;I used a pretrained &lt;a href=&quot;http://www.robots.ox.ac.uk/~vgg/research/very_deep/&quot;&gt;VGG19&lt;/a&gt; network trained on the ImageNet dataset.&lt;/p&gt;
+
+&lt;p&gt;The main part of this project is the loss functions. We have 2 loss functions here: &lt;em&gt;content loss&lt;/em&gt; (difference between the output and Mona Lisa) and &lt;em&gt;style loss&lt;/em&gt; (difference between the output and The Wave)&lt;/p&gt;
+
+&lt;p&gt;I used a deep learning cloud service called &lt;a href=&quot;https://www.floydhub.com/&quot;&gt;Floyd&lt;/a&gt; to train it. Check them out, they give 100 hrs GPU usage for free on signup.&lt;/p&gt;
+
+&lt;p&gt;Feel free to check it out &lt;em&gt;&lt;a href=&quot;https://github.com/sdhnshu/artistic-style-transfer-on-floydhub&quot;&gt;github&lt;/a&gt;&lt;/em&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;em&gt;PS. It was appriciated by the founder of Floyd on &lt;a href=&quot;https://twitter.com/FloydHub_/status/857688492574334976&quot;&gt;twitter&lt;/a&gt;&lt;/em&gt;&lt;/p&gt;
+
+          
+          
+        
+      
+        </content>
+
+        
+          <summary>Here I have implemented the first style transfer paper that came out in 2015 by Gatys et al. in Tensorflow.</summary>
+        
+      </entry>
+    
+  
+    
+      
+
+      
+
+      <entry>
+        <title>What exactly is deep learning and why should we be hyped?</title>
+        <id>http://sdhnshu.com/deep-hype.html</id>
+        <link rel="alternate" type="text/html" href="http://sdhnshu.com/deep-hype.html" />
+        <published>2017-03-19T00:00:00+05:30</published>
+
+        
+          <updated>2017-03-19T00:00:00+05:30</updated>
+        
+
+        <author>
+          <name>Sudhanshu Passi</name>
+          <uri>http://sdhnshu.com/</uri>
+          <email>sudhanshupassi@gmail.com</email>
+        </author>
+
+        <content type="html" xml:base="http://sdhnshu.com/">
           
             &lt;p&gt;Like most of you reading this article, I am a newbie to deep learning too. With a basic computer science degree, I entered this arena after I saw so much excitement among the people in this community. And once I knew what it was, I got hooked too.&lt;/p&gt;
 
@@ -91,4 +742,236 @@
           
         
       
-        </content><summary>Explaining the importance of deep learning</summary></entry></feed>
+        </content>
+
+        
+          <summary>Explaining the importance of deep learning</summary>
+        
+      </entry>
+    
+  
+    
+      
+
+      
+
+      <entry>
+        <title>Image classifier</title>
+        <id>http://sdhnshu.com/tf-img-classifier.html</id>
+        <link rel="alternate" type="text/html" href="http://sdhnshu.com/tf-img-classifier.html" />
+        <published>2017-03-05T00:00:00+05:30</published>
+
+        
+          <updated>2017-03-05T00:00:00+05:30</updated>
+        
+
+        <author>
+          <name>Sudhanshu Passi</name>
+          <uri>http://sdhnshu.com/</uri>
+          <email>sudhanshupassi@gmail.com</email>
+        </author>
+
+        <content type="html" xml:base="http://sdhnshu.com/">
+          
+            &lt;p&gt;This was my second project in Udacity’s Deep Learning Nanodegree Foundation course where we took the &lt;em&gt;&lt;a href=&quot;https://www.cs.toronto.edu/~kriz/cifar.html&quot;&gt;CIFAR 10 database&lt;/a&gt;&lt;/em&gt;, a classic image classification dataset and trained a basic &lt;strong&gt;Convolutional Neural Network&lt;/strong&gt; to classify between the 10 categories specified:&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;airplane&lt;/li&gt;
+  &lt;li&gt;automobile&lt;/li&gt;
+  &lt;li&gt;bird&lt;/li&gt;
+  &lt;li&gt;cat&lt;/li&gt;
+  &lt;li&gt;deer&lt;/li&gt;
+  &lt;li&gt;dog&lt;/li&gt;
+  &lt;li&gt;frog&lt;/li&gt;
+  &lt;li&gt;horse&lt;/li&gt;
+  &lt;li&gt;ship&lt;/li&gt;
+  &lt;li&gt;truck&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;This project was implemented in Tensorflow and no advanced concepts were used, thus we were able to get only around 60% accuracy.&lt;/p&gt;
+
+&lt;p&gt;Feel free to check it out &lt;em&gt;&lt;a href=&quot;https://github.com/sdhnshu/image-classification&quot;&gt;github&lt;/a&gt;&lt;/em&gt;&lt;/p&gt;
+
+          
+          
+        
+      
+        </content>
+
+        
+          <summary>This was my second project in Udacity’s Deep Learning Nanodegree Foundation course where we took the CIFAR 10 database, a classic image classification dataset and trained a basic Convolutional Neural Network to classify between the 10 categories specified:  airplane  automobile  bird  cat  deer  dog  frog  horse  ship  truck</summary>
+        
+      </entry>
+    
+  
+    
+      
+
+      
+
+      <entry>
+        <title>Feedforward neural net</title>
+        <id>http://sdhnshu.com/tf-bike-rental.html</id>
+        <link rel="alternate" type="text/html" href="http://sdhnshu.com/tf-bike-rental.html" />
+        <published>2017-02-08T00:00:00+05:30</published>
+
+        
+          <updated>2017-02-08T00:00:00+05:30</updated>
+        
+
+        <author>
+          <name>Sudhanshu Passi</name>
+          <uri>http://sdhnshu.com/</uri>
+          <email>sudhanshupassi@gmail.com</email>
+        </author>
+
+        <content type="html" xml:base="http://sdhnshu.com/">
+          
+            &lt;p&gt;This was my first project in Udacity’s Deep Learning Nanodegree Foundation course where a bunch of datapoints are given like:&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;Day&lt;/li&gt;
+  &lt;li&gt;Date&lt;/li&gt;
+  &lt;li&gt;Wind speed&lt;/li&gt;
+  &lt;li&gt;Humidity and some others&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;These were taken as the features&lt;/p&gt;
+
+&lt;p&gt;And the label was the number of people who rented the bicycles in that hour in those conditions. The network would be trained to predict this number based on the features given.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;assets/img/bike-dataset.png&quot; alt=&quot;BikeDataset&quot; class=&quot;size-small&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;em&gt;The first fifteen columns are features and the last one(cnt) is the label&lt;/em&gt;&lt;/p&gt;
+
+&lt;p&gt;After implementing a very basic &lt;strong&gt;feedfowrard network&lt;/strong&gt; in Tensorflow and training it on these datapoints an accuracy of 80% was achieved.&lt;/p&gt;
+
+&lt;p&gt;The dataset file is included in the repo and a detailed jupyter notebook letting you through the project. It has a nice graph plotted to show the losses.&lt;/p&gt;
+
+&lt;p&gt;Feel free to check it out &lt;em&gt;&lt;a href=&quot;https://github.com/sdhnshu/bike-rental&quot;&gt;github&lt;/a&gt;&lt;/em&gt;&lt;/p&gt;
+
+          
+          
+        
+      
+        </content>
+
+        
+          <summary>This was my first project in Udacity’s Deep Learning Nanodegree Foundation course where a bunch of datapoints are given like:  Day  Date  Wind speed  Humidity and some others</summary>
+        
+      </entry>
+    
+  
+    
+      
+
+      
+
+      <entry>
+        <title>Poster Design</title>
+        <id>http://sdhnshu.com/poster.html</id>
+        <link rel="alternate" type="text/html" href="http://sdhnshu.com/poster.html" />
+        <published>2016-08-24T00:00:00+05:30</published>
+
+        
+          <updated>2016-08-24T00:00:00+05:30</updated>
+        
+
+        <author>
+          <name>Sudhanshu Passi</name>
+          <uri>http://sdhnshu.com/</uri>
+          <email>sudhanshupassi@gmail.com</email>
+        </author>
+
+        <content type="html" xml:base="http://sdhnshu.com/">
+          
+            &lt;p&gt;&lt;img src=&quot;assets/img/poster.jpg&quot; alt=&quot;Poster&quot; /&gt;
+&lt;em&gt;Appreciate the project on &lt;a href=&quot;https://www.behance.net/gallery/42025197/Event-Poster&quot;&gt;Behance&lt;/a&gt;&lt;/em&gt;&lt;/p&gt;
+
+          
+          
+        
+      
+        </content>
+
+        
+          <summary>Appreciate the project on Behance</summary>
+        
+      </entry>
+    
+  
+    
+      
+
+      
+
+      <entry>
+        <title>Steve Jobs</title>
+        <id>http://sdhnshu.com/jobs.html</id>
+        <link rel="alternate" type="text/html" href="http://sdhnshu.com/jobs.html" />
+        <published>2016-08-24T00:00:00+05:30</published>
+
+        
+          <updated>2016-08-24T00:00:00+05:30</updated>
+        
+
+        <author>
+          <name>Sudhanshu Passi</name>
+          <uri>http://sdhnshu.com/</uri>
+          <email>sudhanshupassi@gmail.com</email>
+        </author>
+
+        <content type="html" xml:base="http://sdhnshu.com/">
+          
+            &lt;p&gt;&lt;img src=&quot;assets/img/jobs.jpg&quot; alt=&quot;Jobs&quot; /&gt;
+&lt;em&gt;Appreciate the project on &lt;a href=&quot;https://www.behance.net/gallery/42024837/Steve-Jobs&quot;&gt;Behance&lt;/a&gt;&lt;/em&gt;&lt;/p&gt;
+
+          
+          
+        
+      
+        </content>
+
+        
+          <summary>Appreciate the project on Behance</summary>
+        
+      </entry>
+    
+  
+    
+      
+
+      
+
+      <entry>
+        <title>Beats</title>
+        <id>http://sdhnshu.com/beats.html</id>
+        <link rel="alternate" type="text/html" href="http://sdhnshu.com/beats.html" />
+        <published>2016-08-24T00:00:00+05:30</published>
+
+        
+          <updated>2016-08-24T00:00:00+05:30</updated>
+        
+
+        <author>
+          <name>Sudhanshu Passi</name>
+          <uri>http://sdhnshu.com/</uri>
+          <email>sudhanshupassi@gmail.com</email>
+        </author>
+
+        <content type="html" xml:base="http://sdhnshu.com/">
+          
+            &lt;p&gt;&lt;img src=&quot;assets/img/beats.jpg&quot; alt=&quot;Beats&quot; class=&quot;size-small&quot; /&gt;
+&lt;em&gt;Appreciate the project on &lt;a href=&quot;https://www.behance.net/gallery/42024705/Beats&quot;&gt;Behance&lt;/a&gt;&lt;/em&gt;&lt;/p&gt;
+
+          
+          
+        
+      
+        </content>
+
+        
+          <summary>Appreciate the project on Behance</summary>
+        
+      </entry>
+    
+  
+</feed>

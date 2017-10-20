@@ -1,0 +1,877 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!doctype html>
+
+
+  <meta charset="utf-8">
+
+
+<title>Holmes bot - Sudhanshu Passi</title>
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<!-- Define a description for better SEO result -->
+<meta name="description" content="This project implements a minimal Recurrent Neural Network (LSTM) in Tensorflow. The network trains and samples on a character level, in this case from all the Sherlock Holmes novels. Here is something it generated after training for 100 epochs: Holmes...">
+
+<!-- Cheome Web App theme color -->
+<meta name="theme-color" content="#81AA42">
+
+<!-- Feed URL -->
+<link rel="alternate" href="/feed.xml" type="application/atom+xml">
+
+<!-- Site icons -->
+
+  
+    
+
+    
+
+    
+
+    
+  
+    
+
+    
+
+    
+
+    
+  
+    
+
+    
+
+    
+
+    
+  
+    
+
+    
+
+    
+
+    
+  
+    
+
+    
+
+    
+
+    
+  
+    
+
+    
+
+    
+
+    
+  
+    
+
+    
+
+    
+
+    
+  
+    
+
+    
+
+    
+
+    
+  
+    
+
+    
+
+    
+
+    
+  
+    
+
+    
+
+    
+
+    
+  
+    
+
+    
+
+    
+
+    
+  
+    
+
+    
+
+    
+
+    
+  
+    
+
+    
+
+    
+
+    
+  
+    
+
+    
+
+    
+
+    
+  
+    
+
+    
+
+    
+
+    
+  
+    
+
+    
+
+    
+
+    
+  
+    
+
+    
+
+    
+
+    
+  
+    
+
+    
+
+    
+
+    
+  
+    
+
+    
+
+    
+
+    
+  
+    
+
+    
+
+    
+
+    
+  
+    
+
+    
+
+    
+
+    
+  
+    
+
+    
+
+    
+
+    
+  
+    
+
+    
+
+    
+
+    
+  
+    
+
+    
+
+    
+
+    
+  
+
+
+<!-- Chrome Web App manifest -->
+<link rel="manifest" href="/manifest.json">
+
+<!-- Main CSS -->
+<link rel="stylesheet" href="/assets/themes/curtana/css/app.css?assets-inline">
+
+<!-- Canonical links, avoid duplicate content problems -->
+<link rel="canonical" href="http://sdhnshu.com/tf-holmes-bot.html">
+
+<!-- DNS prefetching for static files -->
+
+
+<!-- browser-sync, don't remove this -->
+<!-- BS_INSERT -->
+
+<!-- Head hooks -->
+
+
+<!-- Open Graph and Twitter Cards support, more info: https://dev.twitter.com/docs/cards -->
+<meta property="og:type" content="article">
+<meta property="og:site_name" content="Sudhanshu Passi">
+<meta property="og:title" content="Holmes bot">
+<meta property="og:url" content="http://sdhnshu.com/tf-holmes-bot.html">
+<meta property="og:description" content="This project implements a minimal Recurrent Neural Network (LSTM) in Tensorflow. The network trains and samples on a character level, in this case from all the Sherlock Holmes novels. Here is something it generated after training for 100 epochs: Holmes...">
+<meta property="og:image" content="http://sdhnshu.com/logo.png">
+
+<meta name="twitter:card" content="summary_large_image">
+
+
+  <meta name="twitter:site" content="@Sudhanshupassi">
+
+
+
+  <meta name="twitter:creator" content="@Sudhanshupassi">
+
+
+
+  <meta property="article:published_time" content="2017-06-09T00:00:00+05:30">
+  <meta property="article:modified_time" content="">
+  <meta name="twitter:label1" value="Words">
+  <meta name="twitter:data1" value="468 words">
+  <meta name="twitter:label2" value="Reading time">
+  <meta name="twitter:data2" value="2 mins">
+
+
+<!-- Post specified styles -->
+<style data-assets-inline>
+  /*
+    TODO: You have to speicify background color for `html` in order to make `-webkit-filter` work
+    Link: https://bugs.chromium.org/p/chromium/issues/detail?id=591015
+    Date: Mar 1, 2016, 5:41 PM
+  */
+  html {
+    
+    background-color: #81AA42;
+    
+  }
+
+  body {
+    
+    color: #fff;
+    
+
+    
+    background-color: #81AA42;
+    
+
+    
+  }
+
+  
+  a,
+  button {
+    color: #fff;
+  }
+  
+
+  
+  ::selection {
+    color: #aae057;
+  }
+  
+
+  
+  .navigation li a:hover,
+  .navigation li a:focus {
+    color: #aae057;
+  }
+  
+
+  
+  
+    
+
+  
+  .current a {
+    color: #aae057;
+  }
+
+  .content a {
+    color: #aae057;
+  }
+  
+
+  
+  .content code,
+  .content pre {
+    color: #aae057;
+  }
+  
+
+  /*
+    TODO: Need a better solution. I have to redefine the whole box-shadow here because no invidual box-shadow-color exists
+    Date: Mar 12, 2016, 12:09 AM
+  */
+  
+  .content hr::before,
+  .footnotes::before {
+    background: #fff;
+    box-shadow: 24px 0 0 0 #fff, -24px 0 0 0 #fff;
+  }
+  
+
+  
+  .note,
+  .store,
+  .download {
+    border-left-color: #aae057;
+  }
+  
+
+  
+  .external .dot {
+    background: #aae057;
+  }
+  
+
+  
+  :target [rev=footnote],
+  :target [rel=footnote],
+  :target .reversefootnote,
+  :target .footnote {
+    color: #aae057;
+  }
+  
+</style>
+
+<!-- Main navigation with current page / categoriy highlighted -->
+<nav class="navigation">
+  <ul>
+    
+      
+
+
+
+
+
+
+
+
+      
+      
+      <li >
+        <a href="/">
+          
+            HOME
+          
+        </a>
+      </li>
+    
+      
+
+
+
+
+
+
+
+
+      
+      
+      <li >
+        <a href="/work/">
+          
+            work
+          
+        </a>
+      </li>
+    
+      
+
+
+
+
+
+
+
+
+      
+      
+      <li >
+        <a href="/blog/">
+          
+            Blog
+          
+        </a>
+      </li>
+    
+      
+
+
+
+
+
+
+
+
+      
+      
+      <li >
+        <a href="/about/">
+          
+            About
+          
+        </a>
+      </li>
+    
+  </ul>
+</nav>
+
+<!-- Main content wrap -->
+<main class="content " role=main>
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- Post-wide custom CSS -->
+
+  
+
+
+<!-- Article wrapper, limit width -->
+<article 
+  
+>
+
+  <!-- Post title -->
+  <header 
+  style="     "
+>
+
+    <h1 class="
+  
+" title="Holmes bot" data-title="Holmes bot">
+      
+  
+    
+  
+    Holmes bot<span class="dot dot--post"> </span>
+  
+
+  
+
+    </h1>
+
+    
+      <small>
+        By <span rel="author">Sudhanshu Passi</span>
+        on <time datetime="2017-06-09T00:00:00+05:30">Jun 9, 2017</time>
+      </small>
+    
+
+    
+
+  </header>
+
+  <!-- Post content -->
+  <div class="post-content">
+    <p>This project implements a minimal Recurrent Neural Network (LSTM) in Tensorflow. The network trains and samples on a character level, in this case from all the Sherlock Holmes novels.</p>
+
+<p>Here is something it generated after training for 100 epochs:</p>
+<div class="highlighter-rouge"><pre class="highlight"><code>Holmes showed them how we had no such an end of the stuck to my own
+country, and he could not hope with the concealed water who were
+distinguished at the time in the house. I was sitinally that they had
+seen a fair serven and there were nothing to think. I was the lumour
+of his professional country and were standing than to tell him.
+
+"I wanted to see that the man that I was able to discover that a cas
+is that this secret as well. It is not so many than any of the
+matter and a considerable poor frankly. He is the subject which was
+closely."
+
+"I take the morning. It is a supper which you have taken out in your
+fair first thing."
+
+"What did you make of your house?"
+
+"I have no day?"
+
+"Yes, I can say, and we are never and his son."
+
+"And you cannot assist that? Who is it?"
+
+"I am glad at our face. I would sure the more important than to the
+sound which I have not seen the corner which has been a converse of
+the most communication as to the sentence window out why we can. The old
+cruel to the professor was in my companions and a letter, but the
+tamb of the hall was one in the side of the door. A compellette as I
+saw, as you see, a dead man without a moment when the clumber of
+carriage stepped his constetce. The stairs were not taken about it
+with the string. Here he walked out of my professional, but when we at
+him as I had always seem to be a man, sir. He had not hit heed against the
+passages and had, so I had seen the pleasure of a sergeant that it was
+not once to be a lately and table for a muscular. Hunder they were
+sure of himself thickly was impendented in this man with him. He came
+to the door, and then to send all the room. It came to the clothes of
+the most, and which I had confessing that I have been claim in a
+delate. I was not far to see that he was always anything, so I would
+be supprised."
+</code></pre>
+</div>
+
+<p>The checkpoints trained on a GTX 1080 for 100 epochs can be found <a href="https://drive.google.com/file/d/0B24n6xHwJ0h0MXR3MXRRQUd2N3M/view?usp=sharing">here</a>. The loss in the end was 1.1275</p>
+
+<p>You can train it on your own dataset by replacing the ‘holmes.txt’ with your own file and running train.py</p>
+
+<p>Feel free to check it out <em><a href="https://github.com/sdhnshu/holmes-bot">github</a></em></p>
+
+
+    
+    
+
+    
+  </div>
+
+</article>
+
+
+</main>
+
+<!-- Footer section -->
+
+  <footer class="footer">
+    <ul>
+      <li><a href="https://github.com/sdhnshu">Github</a></li>
+      <li><a href="https://www.behance.net/sdhnshu">Behance</a></li>
+      <li><a href="https://www.linkedin.com/in/sdhnshu/">LinkedIn</a></li>
+      
+      
+
+      <!-- 
+        <li><a href="/email-signup/" title="Subscribe">Email</a></li>
+       -->
+
+      <li><a href="/feed.xml" title="Feed (The Atom Syndication Format)">Atom</a></li>
+    </ul>
+  </footer>
+
+
+<!-- Theme scripts -->
+<script src="/assets/themes/curtana/js/app.js?assets-inline"></script>
+
+<!-- User scripts -->
+<script src="/assets/js/user.js?assets-inline"></script>
+
+<!-- Lightense Images -->
+
+  <script src="/assets/themes/curtana/js/lightense.min.js?assets-inline"></script>
+  <script>
+    window.addEventListener('load', function () {
+      Lightense('p > img:not(.no-lightense),.lightense');
+    }, false);
+  </script>
+
+
+<!-- Service Worker  -->
+
+  
+
+
+<!-- Google Analytics -->
+
+  
+    <script>
+      (function(a,m,s,f,j,k,l){a['GoogleAnalyticsObject']=j;a[j]=a[j]||function(){
+      (a[j].q=a[j].q||[]).push(arguments)},a[j].l=1*new Date();k=m.createElement(s),
+      l=m.getElementsByTagName(s)[0];k.async=1;k.src=f;l.parentNode.insertBefore(k,l)
+      })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+      ga('create', 'UA-83000432-2', 'auto');
+      ga('send', 'pageview');
+    </script>
+  
+
+
+<!-- Foot hooks -->
+
+
+
