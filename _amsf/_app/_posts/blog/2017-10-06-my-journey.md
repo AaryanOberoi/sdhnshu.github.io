@@ -19,7 +19,7 @@ So I started searching for ways to learn as I knew absolutely nothing about ML o
 
 Then I did the [Intro to ML course](https://in.udacity.com/course/intro-to-machine-learning--ud120) by the founder of Udacity, ex-VP of Google: Sebastian Thrun. There you'll get familiar with Python and a basic ML library: scikit learn. It's a new age course where they teach you how to get around python libraries (which is a vast corpus). I found it really helpful as it got me straight into python with ML.
 
-In the meantime, I was also watching [Siraj Raval's videos](https://www.youtube.com/channel/UCWN3xxRkmTPmbKwht9FuE5A) (I was one of his 20k subscribers) which went straight over my head btw. (That guy is more hype, less knowledge). You don't get much to learn from him but can get the idea of the scope of the deep learning scene.
+In the meantime, I was also watching [Siraj Raval's videos](https://www.youtube.com/channel/UCWN3xxRkmTPmbKwht9FuE5A) (I was one of his 20k subscribers) which went straight over my head btw. You don't get much to learn, as these things cannot be taught in five minutes, but can get the scope of the deep learning scene.
 
 While I finished all these things, Siraj mentioned in one of his videos that he was planning a _Nanodegree_. After a couple of days, I saw a new nano degree on Udacity called "Deep Learning Nanodegree Foundation". I took it immediately. It was 20k Rupees at that time. I did not regret paying that much at that time. But by the time you are reading this, there might be several other deep learning courses on the internet. At the time of this writing, I really like the [Fast.ai course](http://course.fast.ai/). It takes you through the practicality of it.
 
