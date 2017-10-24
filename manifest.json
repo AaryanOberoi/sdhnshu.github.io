@@ -3,7 +3,7 @@
   "short_name": "Sud",
   "start_url": "/",
   "display": "standalone",
-  "theme_color": "#a212d1",
+  "theme_color": "#81AA42",
   "background_color": "#fff",
   "icons": [
     {

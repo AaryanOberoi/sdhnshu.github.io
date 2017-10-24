@@ -153,7 +153,7 @@ download:       http://sdhnshu.com
 #
 # Used by Safari mask-icon, Chrome Web App theme color
 colors:
-  theme:      "#a212d1"
+  theme:      "#81AA42"
   background: "#fff"
 
 # Service Worker Precache
