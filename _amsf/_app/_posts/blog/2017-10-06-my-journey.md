@@ -54,7 +54,7 @@ One more place that you can get the first-hand knowledge about what's happening 
 
 ![Reddit ML](assets/img/reddit-ml.png){: .size-small}
 
-If you don't use twitter or Reddit but use slack, you can use my [slack group: sdhnshu.slack.com](https://join.slack.com/t/sdhnshu/shared_invite/enQtMjU0NjM3OTY1NTA1LTMwM2E4NTBjZGRjYjNjMDhkZmY4MzZjOGRkOWNlMmRjZGNkZjIxMzcyOGUxZDkwYjgzNjUyYTg2YTZjZTczYjQ). I have channels where you get news from all these guys via twitter and also the most important news from the hot section of /r/MachineLearning. It's a place to be for all the ML news. I personally use it and you can use it too for all the news in a single place.
+If you don't use twitter or Reddit but use slack, you can use my [slack group: sdhnshu.slack.com](https://join.slack.com/t/sdhnshu/shared_invite/enQtMjk0NTM0MDM0NDAzLTU4MjNhOThkMzM3ZWJmNGMwNTIxZWZiMDVhNmI0Mzc0ZWVjOTViNDliMGRjM2MxYjVlMGU2MzdkMmY2MmU1Mjk). I have channels where you get news from all these guys via twitter and also the most important news from the hot section of /r/MachineLearning. It's a place to be for all the ML news. I personally use it and you can use it too for all the news in a single place.
 
 ![My slack](assets/img/slack.png){: .size-small}
 
